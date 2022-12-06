@@ -1,0 +1,2140 @@
+2022-12-06 20:16:12.629321 (MainThread): Running with dbt=1.3.1
+2022-12-06 20:16:13.248566 (MainThread): 20:16:13  [WARNING]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+2022-12-06 20:16:13.248899 (MainThread): 20:16:13  Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '5209c540-7db0-4d27-bba2-425f1b6cc5f8', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee7167fbb0>]}
+2022-12-06 20:16:13.249169 (MainThread): 20:16:13  [WARNING]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+2022-12-06 20:16:13.249346 (MainThread): 20:16:13  Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '5209c540-7db0-4d27-bba2-425f1b6cc5f8', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee7167ad00>]}
+2022-12-06 20:16:13.283268 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt_rpc.task.server.RPCServerTask'>, debug=None, defer=None, exclude=None, fail_fast=None, host='0.0.0.0', log_cache_events=False, log_format=None, models=None, partial_parse=True, port=8580, printer_width=None, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, send_anonymous_usage_stats=None, single_threaded=False, state=None, static_parser=None, target=None, threads=None, use_colors=None, use_experimental_parser=None, vars='{}', version_check=None, warn_error=None, which='rpc', write_json=None)
+2022-12-06 20:16:13.295176 (MainThread): Tracking: tracking
+2022-12-06 20:16:13.295626 (MainThread): 20:16:13  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee93fbdca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee7167fd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee7167fb50>]}
+2022-12-06 20:16:13.296004 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=22
+2022-12-06 20:16:13.296345 (MainThread): Supported methods: ['build', 'cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'list', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'source-freshness', 'status', 'test']
+2022-12-06 20:16:13.296518 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2022-12-06 20:16:18.425319 (Thread-13): handling ps request
+2022-12-06 20:16:18.427037 (Thread-13): 20:16:18  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5209c540-7db0-4d27-bba2-425f1b6cc5f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee716b4f70>]}
+2022-12-06 20:16:18.427765 (Thread-13): sending response (<Response 100 bytes [200 OK]>) to 10.0.18.70
+2022-12-06 20:16:18.832696 (Thread-14): handling status request
+2022-12-06 20:16:18.833154 (Thread-14): 20:16:18  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5209c540-7db0-4d27-bba2-425f1b6cc5f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee73cf31c0>]}
+2022-12-06 20:16:18.833654 (Thread-14): sending response (<Response 356 bytes [200 OK]>) to 10.0.18.70
+2022-12-06 20:16:18.950403 (Thread-15): handling status request
+2022-12-06 20:16:18.950889 (Thread-15): 20:16:18  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5209c540-7db0-4d27-bba2-425f1b6cc5f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee73cf32e0>]}
+2022-12-06 20:16:18.951366 (Thread-15): sending response (<Response 339 bytes [200 OK]>) to 10.0.18.70
+2022-12-06 20:16:18.961762 (Thread-16): handling ps request
+2022-12-06 20:16:18.962168 (Thread-16): 20:16:18  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5209c540-7db0-4d27-bba2-425f1b6cc5f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee73cf3430>]}
+2022-12-06 20:16:18.962887 (Thread-16): sending response (<Response 100 bytes [200 OK]>) to 10.0.18.70
+2022-12-06 20:16:28.252049 (Thread-17): handling ps request
+2022-12-06 20:16:28.253857 (Thread-17): 20:16:28  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5209c540-7db0-4d27-bba2-425f1b6cc5f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee716b4b50>]}
+2022-12-06 20:16:28.254310 (Thread-17): sending response (<Response 100 bytes [200 OK]>) to 10.0.18.70
+2022-12-06 20:16:28.386925 (Thread-18): handling status request
+2022-12-06 20:16:28.387356 (Thread-18): 20:16:28  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5209c540-7db0-4d27-bba2-425f1b6cc5f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee716b4b20>]}
+2022-12-06 20:16:28.387797 (Thread-18): sending response (<Response 356 bytes [200 OK]>) to 10.0.18.70
+2022-12-06 20:16:28.432166 (Thread-19): handling ps request
+2022-12-06 20:16:28.432619 (Thread-19): 20:16:28  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5209c540-7db0-4d27-bba2-425f1b6cc5f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee73cf3310>]}
+2022-12-06 20:16:28.433073 (Thread-19): sending response (<Response 100 bytes [200 OK]>) to 10.0.18.70
+2022-12-06 20:16:28.451190 (Thread-20): handling status request
+2022-12-06 20:16:28.451606 (Thread-20): 20:16:28  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5209c540-7db0-4d27-bba2-425f1b6cc5f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee73cf3400>]}
+2022-12-06 20:16:28.452034 (Thread-20): sending response (<Response 339 bytes [200 OK]>) to 10.0.18.70
+2022-12-06 20:16:36.708771 (Thread-21): handling status request
+2022-12-06 20:16:36.709219 (Thread-21): 20:16:36  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5209c540-7db0-4d27-bba2-425f1b6cc5f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee73cf33a0>]}
+2022-12-06 20:16:36.709676 (Thread-21): sending response (<Response 339 bytes [200 OK]>) to 10.0.18.70
+2022-12-06 20:17:09.486972 (Thread-22): handling status request
+2022-12-06 20:17:09.488751 (Thread-22): 20:17:09  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5209c540-7db0-4d27-bba2-425f1b6cc5f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee73cf3760>]}
+2022-12-06 20:17:09.489236 (Thread-22): sending response (<Response 356 bytes [200 OK]>) to 10.0.18.70
+2022-12-06 20:17:09.703281 (Thread-23): handling status request
+2022-12-06 20:17:09.703705 (Thread-23): 20:17:09  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5209c540-7db0-4d27-bba2-425f1b6cc5f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee73cf38b0>]}
+2022-12-06 20:17:09.704139 (Thread-23): sending response (<Response 339 bytes [200 OK]>) to 10.0.18.70
+2022-12-06 20:18:42.207509 (Thread-24): handling status request
+2022-12-06 20:18:42.209414 (Thread-24): 20:18:42  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '5209c540-7db0-4d27-bba2-425f1b6cc5f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee73cf3a00>]}
+2022-12-06 20:18:42.209888 (Thread-24): sending response (<Response 356 bytes [200 OK]>) to 10.0.18.70
+2022-12-06 20:20:13.826836 (MainThread): Running with dbt=1.3.1
+2022-12-06 20:20:14.427288 (MainThread): 20:20:14  [WARNING]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+2022-12-06 20:20:14.427598 (MainThread): 20:20:14  Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a5a8aca0>]}
+2022-12-06 20:20:14.427854 (MainThread): 20:20:14  [WARNING]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+2022-12-06 20:20:14.428027 (MainThread): 20:20:14  Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2766232d30>]}
+2022-12-06 20:20:14.459994 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt_rpc.task.server.RPCServerTask'>, debug=None, defer=None, exclude=None, fail_fast=None, host='0.0.0.0', log_cache_events=False, log_format=None, models=None, partial_parse=True, port=8580, printer_width=None, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, send_anonymous_usage_stats=None, single_threaded=False, state=None, static_parser=None, target=None, threads=None, use_colors=None, use_experimental_parser=None, vars='{}', version_check=None, warn_error=None, which='rpc', write_json=None)
+2022-12-06 20:20:14.461947 (MainThread): Tracking: tracking
+2022-12-06 20:20:14.462339 (MainThread): 20:20:14  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27c3528be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a5a8abe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a5a8a310>]}
+2022-12-06 20:20:14.462714 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=22
+2022-12-06 20:20:14.463027 (MainThread): Supported methods: ['build', 'cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'list', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'source-freshness', 'status', 'test']
+2022-12-06 20:20:14.463194 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2022-12-06 20:20:15.979838 (Thread-13): handling ps request
+2022-12-06 20:20:15.980268 (Thread-13): 20:20:15  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a5a40eb0>]}
+2022-12-06 20:20:15.980983 (Thread-13): sending response (<Response 100 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:20:16.247601 (Thread-14): handling status request
+2022-12-06 20:20:16.248018 (Thread-14): 20:20:16  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a5a64070>]}
+2022-12-06 20:20:16.248481 (Thread-14): sending response (<Response 339 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:20:16.368023 (Thread-15): handling ps request
+2022-12-06 20:20:16.368433 (Thread-15): 20:20:16  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a5a641c0>]}
+2022-12-06 20:20:16.368855 (Thread-15): sending response (<Response 100 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:20:16.429207 (Thread-16): handling status request
+2022-12-06 20:20:16.429626 (Thread-16): 20:20:16  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a5a64340>]}
+2022-12-06 20:20:16.430052 (Thread-16): sending response (<Response 356 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:20:32.872373 (Thread-17): handling status request
+2022-12-06 20:20:32.873557 (Thread-17): 20:20:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a5a40e80>]}
+2022-12-06 20:20:32.873999 (Thread-17): sending response (<Response 356 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:21.480361 (Thread-18): handling status request
+2022-12-06 20:21:21.481775 (Thread-18): 20:21:21  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a5a409d0>]}
+2022-12-06 20:21:21.482220 (Thread-18): sending response (<Response 356 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:35.950601 (Thread-19): handling status request
+2022-12-06 20:21:35.951062 (Thread-19): 20:21:35  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a5a64460>]}
+2022-12-06 20:21:35.951503 (Thread-19): sending response (<Response 356 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:43.083488 (Thread-20): handling status request
+2022-12-06 20:21:43.083932 (Thread-20): 20:21:43  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a5a64340>]}
+2022-12-06 20:21:43.084365 (Thread-20): sending response (<Response 356 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:43.095668 (Thread-21): handling ps request
+2022-12-06 20:21:43.096046 (Thread-21): 20:21:43  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a5a641c0>]}
+2022-12-06 20:21:43.096472 (Thread-21): sending response (<Response 100 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:43.249075 (Thread-22): handling ps request
+2022-12-06 20:21:43.249570 (Thread-22): 20:21:43  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a5a644c0>]}
+2022-12-06 20:21:43.249989 (Thread-22): sending response (<Response 100 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:43.344439 (Thread-23): handling deps request
+2022-12-06 20:21:43.344855 (Thread-23): 20:21:43  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a5a645b0>]}
+2022-12-06 20:21:43.379915 (Thread-23): sending response (<Response 133 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:43.662066 (Thread-24): handling status request
+2022-12-06 20:21:43.662546 (Thread-24): 20:21:43  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a3386b80>]}
+2022-12-06 20:21:43.663234 (Thread-24): sending response (<Response 180 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:43.777854 (Thread-25): handling ps request
+2022-12-06 20:21:43.778283 (Thread-25): 20:21:43  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a3386a30>]}
+2022-12-06 20:21:43.778884 (Thread-25): sending response (<Response 465 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:44.183968 (Thread-26): handling poll request
+2022-12-06 20:21:44.184388 (Thread-26): 20:21:44  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a3386520>]}
+2022-12-06 20:21:44.184950 (Thread-26): sending response (<Response 279 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:44.223111 (Thread-27): handling status request
+2022-12-06 20:21:44.223524 (Thread-27): 20:21:44  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a3386820>]}
+2022-12-06 20:21:44.223939 (Thread-27): sending response (<Response 180 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:44.273325 (Thread-28): handling ps request
+2022-12-06 20:21:44.273733 (Thread-28): 20:21:44  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a33865b0>]}
+2022-12-06 20:21:44.274218 (Thread-28): sending response (<Response 465 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:44.677811 (Thread-29): handling status request
+2022-12-06 20:21:44.678219 (Thread-29): 20:21:44  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a3386eb0>]}
+2022-12-06 20:21:44.678635 (Thread-29): sending response (<Response 180 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:45.615206 (Thread-30): handling poll request
+2022-12-06 20:21:45.615872 (Thread-30): 20:21:45  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a3386160>]}
+2022-12-06 20:21:45.616636 (Thread-30): sending response (<Response 279 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:45.672539 (Thread-31): handling status request
+2022-12-06 20:21:45.672956 (Thread-31): 20:21:45  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a3386220>]}
+2022-12-06 20:21:45.673404 (Thread-31): sending response (<Response 180 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:46.113046 (MainThread): 20:21:46  Set downloads directory='/tmp/dbt-downloads-p3ph_cqu'
+2022-12-06 20:21:46.113665 (MainThread): 20:21:46  Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+2022-12-06 20:21:46.195235 (MainThread): 20:21:46  Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+2022-12-06 20:21:46.195577 (MainThread): 20:21:46  Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+2022-12-06 20:21:46.264431 (MainThread): 20:21:46  Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+2022-12-06 20:21:46.312356 (MainThread): 20:21:46  Installing dbt-labs/dbt_utils
+2022-12-06 20:21:46.566749 (Thread-32): handling status request
+2022-12-06 20:21:46.567163 (Thread-32): 20:21:46  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a3377f40>]}
+2022-12-06 20:21:46.567587 (Thread-32): sending response (<Response 180 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:46.707284 (Thread-33): handling ps request
+2022-12-06 20:21:46.707689 (Thread-33): 20:21:46  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a3377820>]}
+2022-12-06 20:21:46.708172 (Thread-33): sending response (<Response 465 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:47.089941 (Thread-34): handling poll request
+2022-12-06 20:21:47.090389 (Thread-34): 20:21:47  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a33772b0>]}
+2022-12-06 20:21:47.090975 (Thread-34): sending response (<Response 2212 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:47.160574 (Thread-35): handling status request
+2022-12-06 20:21:47.161039 (Thread-35): 20:21:47  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a33773a0>]}
+2022-12-06 20:21:47.161534 (Thread-35): sending response (<Response 180 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:48.065824 (Thread-36): handling status request
+2022-12-06 20:21:48.066249 (Thread-36): 20:21:48  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a33773d0>]}
+2022-12-06 20:21:48.066672 (Thread-36): sending response (<Response 180 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:48.488565 (Thread-37): handling poll request
+2022-12-06 20:21:48.488983 (Thread-37): 20:21:48  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a33776a0>]}
+2022-12-06 20:21:48.489501 (Thread-37): sending response (<Response 279 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:48.967993 (Thread-38): handling status request
+2022-12-06 20:21:48.968443 (Thread-38): 20:21:48  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a3377c10>]}
+2022-12-06 20:21:48.968917 (Thread-38): sending response (<Response 180 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:49.099776 (Thread-39): handling ps request
+2022-12-06 20:21:49.100182 (Thread-39): 20:21:49  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a3377d00>]}
+2022-12-06 20:21:49.121828 (Thread-39): sending response (<Response 465 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:49.501411 (Thread-40): handling status request
+2022-12-06 20:21:49.501815 (Thread-40): 20:21:49  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a5a40e80>]}
+2022-12-06 20:21:49.502231 (Thread-40): sending response (<Response 180 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:49.897822 (Thread-41): handling poll request
+2022-12-06 20:21:49.898236 (Thread-41): 20:21:49  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a3386ac0>]}
+2022-12-06 20:21:49.898716 (Thread-41): sending response (<Response 279 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:50.193917 (MainThread): 20:21:50    Installed from version 0.8.0
+2022-12-06 20:21:50.194088 (MainThread): 20:21:50    Updated version available: 1.0.0
+2022-12-06 20:21:50.194257 (MainThread): 20:21:50  Sending event: {'category': 'dbt', 'action': 'package', 'label': '3c9df47d-4b25-48df-9272-947bf83e0a71', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa60053fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa60053f10>]}
+2022-12-06 20:21:50.194489 (MainThread): 20:21:50  
+2022-12-06 20:21:50.194568 (MainThread): 20:21:50  Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+2022-12-06 20:21:50.392673 (Thread-42): handling status request
+2022-12-06 20:21:50.393109 (Thread-42): 20:21:50  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a3386430>]}
+2022-12-06 20:21:50.393596 (Thread-42): sending response (<Response 180 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:50.493939 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Partial parse save file not found. Starting full parse.
+2022-12-06 20:21:50.494289 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a33afc70>]}
+2022-12-06 20:21:50.720967 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/grant_select_on_schema.sql
+2022-12-06 20:21:50.722797 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/apply_grants.sql
+2022-12-06 20:21:50.724523 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/catalog.sql
+2022-12-06 20:21:50.726460 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/adapters.sql
+2022-12-06 20:21:50.766223 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/seed.sql
+2022-12-06 20:21:50.771579 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/incremental.sql
+2022-12-06 20:21:50.781586 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/test.sql
+2022-12-06 20:21:50.782581 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/snapshot.sql
+2022-12-06 20:21:50.783518 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/merge.sql
+2022-12-06 20:21:50.787234 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/table.sql
+2022-12-06 20:21:50.793227 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/view.sql
+2022-12-06 20:21:50.794609 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/utils/escape_single_quotes.sql
+2022-12-06 20:21:50.795245 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/utils/safe_cast.sql
+2022-12-06 20:21:50.795823 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/utils/array_construct.sql
+2022-12-06 20:21:50.796408 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/utils/timestamps.sql
+2022-12-06 20:21:50.798398 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/utils/right.sql
+2022-12-06 20:21:50.799068 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/utils/bool_or.sql
+2022-12-06 20:21:50.799560 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/etc/statement.sql
+2022-12-06 20:21:50.804841 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/etc/datetime.sql
+2022-12-06 20:21:50.812976 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/adapters/apply_grants.sql
+2022-12-06 20:21:50.826645 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/adapters/freshness.sql
+2022-12-06 20:21:50.828659 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/adapters/columns.sql
+2022-12-06 20:21:50.838067 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/adapters/timestamps.sql
+2022-12-06 20:21:50.841567 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/adapters/relation.sql
+2022-12-06 20:21:50.856028 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/adapters/schema.sql
+2022-12-06 20:21:50.858344 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/adapters/persist_docs.sql
+2022-12-06 20:21:50.862886 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/adapters/metadata.sql
+2022-12-06 20:21:50.869883 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/adapters/indexes.sql
+2022-12-06 20:21:50.872662 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/get_custom_name/get_custom_database.sql
+2022-12-06 20:21:50.874565 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/get_custom_name/get_custom_schema.sql
+2022-12-06 20:21:50.877033 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/get_custom_name/get_custom_alias.sql
+2022-12-06 20:21:50.878729 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/python_model/python.sql
+2022-12-06 20:21:50.884530 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/hooks.sql
+2022-12-06 20:21:50.888367 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/configs.sql
+2022-12-06 20:21:50.890707 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/seeds/seed.sql
+2022-12-06 20:21:50.897367 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/seeds/helpers.sql
+2022-12-06 20:21:50.914973 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/tests/test.sql
+2022-12-06 20:21:50.919362 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/tests/helpers.sql
+2022-12-06 20:21:50.921134 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/tests/where_subquery.sql
+2022-12-06 20:21:50.922926 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/models/view/helpers.sql
+2022-12-06 20:21:50.924196 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/models/view/create_or_replace_view.sql
+2022-12-06 20:21:50.927373 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/models/view/create_view_as.sql
+2022-12-06 20:21:50.929658 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/models/view/view.sql
+2022-12-06 20:21:50.935212 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/models/incremental/strategies.sql
+2022-12-06 20:21:50.941950 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/models/incremental/column_helpers.sql
+2022-12-06 20:21:50.949748 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/models/incremental/incremental.sql
+2022-12-06 20:21:50.959566 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/models/incremental/on_schema_change.sql
+2022-12-06 20:21:50.975299 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/models/incremental/is_incremental.sql
+2022-12-06 20:21:50.976861 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/models/incremental/merge.sql
+2022-12-06 20:21:50.991229 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/models/table/create_table_as.sql
+2022-12-06 20:21:50.994665 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/models/table/table.sql
+2022-12-06 20:21:50.999998 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:50  Parsing macros/materializations/snapshots/strategies.sql
+2022-12-06 20:21:51.015293 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/materializations/snapshots/snapshot_merge.sql
+2022-12-06 20:21:51.017001 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/materializations/snapshots/snapshot.sql
+2022-12-06 20:21:51.027976 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/materializations/snapshots/helpers.sql
+2022-12-06 20:21:51.040265 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/generic_test_sql/not_null.sql
+2022-12-06 20:21:51.041204 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/generic_test_sql/relationships.sql
+2022-12-06 20:21:51.042096 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/generic_test_sql/unique.sql
+2022-12-06 20:21:51.042787 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/generic_test_sql/accepted_values.sql
+2022-12-06 20:21:51.044094 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/intersect.sql
+2022-12-06 20:21:51.044954 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/position.sql
+2022-12-06 20:21:51.046108 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/escape_single_quotes.sql
+2022-12-06 20:21:51.047185 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/safe_cast.sql
+2022-12-06 20:21:51.048471 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/array_construct.sql
+2022-12-06 20:21:51.049994 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/cast_bool_to_text.sql
+2022-12-06 20:21:51.051054 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/datediff.sql
+2022-12-06 20:21:51.052290 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/concat.sql
+2022-12-06 20:21:51.053326 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/length.sql
+2022-12-06 20:21:51.054306 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/any_value.sql
+2022-12-06 20:21:51.055266 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/data_types.sql
+2022-12-06 20:21:51.062002 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/array_concat.sql
+2022-12-06 20:21:51.063107 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/right.sql
+2022-12-06 20:21:51.064207 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/array_append.sql
+2022-12-06 20:21:51.065309 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/last_day.sql
+2022-12-06 20:21:51.067102 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/split_part.sql
+2022-12-06 20:21:51.069114 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/date_trunc.sql
+2022-12-06 20:21:51.070217 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/literal.sql
+2022-12-06 20:21:51.071170 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/hash.sql
+2022-12-06 20:21:51.072255 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/except.sql
+2022-12-06 20:21:51.073327 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/bool_or.sql
+2022-12-06 20:21:51.074267 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/replace.sql
+2022-12-06 20:21:51.075461 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/dateadd.sql
+2022-12-06 20:21:51.076674 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/utils/listagg.sql
+2022-12-06 20:21:51.078920 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing tests/generic/builtin.sql
+2022-12-06 20:21:51.081859 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/sql/pivot.sql
+2022-12-06 20:21:51.085731 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/sql/star.sql
+2022-12-06 20:21:51.089774 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/sql/surrogate_key.sql
+2022-12-06 20:21:51.093067 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/sql/get_query_results_as_dict.sql
+2022-12-06 20:21:51.095332 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/sql/date_spine.sql
+2022-12-06 20:21:51.102459 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/sql/get_column_values.sql
+2022-12-06 20:21:51.111783 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/sql/groupby.sql
+2022-12-06 20:21:51.114262 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/sql/get_tables_by_pattern_sql.sql
+2022-12-06 20:21:51.126165 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/sql/nullcheck_table.sql
+2022-12-06 20:21:51.129091 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/sql/get_tables_by_prefix_sql.sql
+2022-12-06 20:21:51.132062 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/sql/get_relations_by_pattern.sql
+2022-12-06 20:21:51.138215 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/sql/get_relations_by_prefix.sql
+2022-12-06 20:21:51.144324 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/sql/safe_add.sql
+2022-12-06 20:21:51.147270 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/sql/haversine_distance.sql
+2022-12-06 20:21:51.158185 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/sql/unpivot.sql
+2022-12-06 20:21:51.172558 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/sql/generate_series.sql
+2022-12-06 20:21:51.180377 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/sql/nullcheck.sql
+2022-12-06 20:21:51.183385 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/sql/union.sql
+2022-12-06 20:21:51.198855 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/materializations/insert_by_period_materialization.sql
+2022-12-06 20:21:51.225043 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/jinja_helpers/pretty_time.sql
+2022-12-06 20:21:51.226434 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/jinja_helpers/slugify.sql
+2022-12-06 20:21:51.227608 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/jinja_helpers/log_info.sql
+2022-12-06 20:21:51.228714 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/jinja_helpers/pretty_log_format.sql
+2022-12-06 20:21:51.229878 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/web/get_url_parameter.sql
+2022-12-06 20:21:51.231401 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/web/get_url_path.sql
+2022-12-06 20:21:51.233857 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/web/get_url_host.sql
+2022-12-06 20:21:51.235719 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/schema_tests/expression_is_true.sql
+2022-12-06 20:21:51.237489 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/schema_tests/not_constant.sql
+2022-12-06 20:21:51.238702 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/schema_tests/sequential_values.sql
+2022-12-06 20:21:51.241373 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/schema_tests/not_null_proportion.sql
+2022-12-06 20:21:51.243410 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/schema_tests/at_least_one.sql
+2022-12-06 20:21:51.244621 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/schema_tests/equality.sql
+2022-12-06 20:21:51.248083 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/schema_tests/test_not_null_where.sql
+2022-12-06 20:21:51.249540 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/schema_tests/equal_rowcount.sql
+2022-12-06 20:21:51.251133 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/schema_tests/not_accepted_values.sql
+2022-12-06 20:21:51.253171 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/schema_tests/test_unique_where.sql
+2022-12-06 20:21:51.254572 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/schema_tests/mutually_exclusive_ranges.sql
+2022-12-06 20:21:51.262887 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/schema_tests/relationships_where.sql
+2022-12-06 20:21:51.264995 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/schema_tests/accepted_range.sql
+2022-12-06 20:21:51.267311 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/schema_tests/fewer_rows_than.sql
+2022-12-06 20:21:51.268938 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/schema_tests/unique_combination_of_columns.sql
+2022-12-06 20:21:51.271610 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/schema_tests/recency.sql
+2022-12-06 20:21:51.273329 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/schema_tests/cardinality_equality.sql
+2022-12-06 20:21:51.275216 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/cross_db_utils/split_part.sql
+2022-12-06 20:21:51.276974 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/cross_db_utils/length.sql
+2022-12-06 20:21:51.278277 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/cross_db_utils/current_timestamp.sql
+2022-12-06 20:21:51.281791 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/cross_db_utils/right.sql
+2022-12-06 20:21:51.283928 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/cross_db_utils/hash.sql
+2022-12-06 20:21:51.285368 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/cross_db_utils/replace.sql
+2022-12-06 20:21:51.286578 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/cross_db_utils/cast_bool_to_text.sql
+2022-12-06 20:21:51.287968 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/cross_db_utils/concat.sql
+2022-12-06 20:21:51.288967 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/cross_db_utils/_is_relation.sql
+2022-12-06 20:21:51.290099 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/cross_db_utils/identifier.sql
+2022-12-06 20:21:51.291708 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/cross_db_utils/datediff.sql
+2022-12-06 20:21:51.301085 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/cross_db_utils/dateadd.sql
+2022-12-06 20:21:51.303913 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/cross_db_utils/datatypes.sql
+2022-12-06 20:21:51.309853 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/cross_db_utils/position.sql
+2022-12-06 20:21:51.311425 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/cross_db_utils/literal.sql
+2022-12-06 20:21:51.312414 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/cross_db_utils/_is_ephemeral.sql
+2022-12-06 20:21:51.314289 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/cross_db_utils/width_bucket.sql
+2022-12-06 20:21:51.319265 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/cross_db_utils/date_trunc.sql
+2022-12-06 20:21:51.320699 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/cross_db_utils/except.sql
+2022-12-06 20:21:51.321823 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/cross_db_utils/safe_cast.sql
+2022-12-06 20:21:51.323817 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/cross_db_utils/last_day.sql
+2022-12-06 20:21:51.327175 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  Parsing macros/cross_db_utils/intersect.sql
+2022-12-06 20:21:51.389889 (Thread-43): handling status request
+2022-12-06 20:21:51.410821 (Thread-43): 20:21:51  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a3236b20>]}
+2022-12-06 20:21:51.432187 (Thread-43): sending response (<Response 180 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:51.448442 (Thread-44): handling poll request
+2022-12-06 20:21:51.464682 (Thread-44): 20:21:51  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a32ac040>]}
+2022-12-06 20:21:51.475560 (Thread-44): sending response (<Response 2041 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:51.538073 (Thread-45): handling ps request
+2022-12-06 20:21:51.558931 (Thread-45): 20:21:51  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a328fdc0>]}
+2022-12-06 20:21:51.564676 (Thread-45): sending response (<Response 465 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:51.730422 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  1699: static parser successfully parsed customer_revenue_by_month.sql
+2022-12-06 20:21:51.753165 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  1699: static parser successfully parsed customer_churn_month.sql
+2022-12-06 20:21:51.757808 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  1603: static parser failed on mrr.sql
+2022-12-06 20:21:51.778661 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  
+Warning: the `surrogate_key` macro now takes a single list argument instead of multiple string arguments. Support for multiple string arguments will be deprecated in a future release of dbt-utils. The acme.mrr model triggered this warning. 
+2022-12-06 20:21:51.795394 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  1602: parser fallback to jinja rendering on mrr.sql
+2022-12-06 20:21:51.797972 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  1603: static parser failed on utils/util_months.sql
+2022-12-06 20:21:51.847927 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  1602: parser fallback to jinja rendering on utils/util_months.sql
+2022-12-06 20:21:51.894815 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:51  [WARNING]: 'subscription_periods' is a seed node, but it is specified in the models section
+of models/schema.yml. To fix this error, place the `subscription_periods`
+specification under the seeds key instead.
+2022-12-06 20:21:52.018926 (Thread-46): handling status request
+2022-12-06 20:21:52.041533 (Thread-46): 20:21:52  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279e3dbdc0>]}
+2022-12-06 20:21:52.042077 (Thread-46): sending response (<Response 180 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:52.082308 (dee886ca-02d7-41c9-b55f-18b4307d8aff-handler-deps): 20:21:52  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279e29fac0>]}
+2022-12-06 20:21:52.915543 (Thread-47): handling poll request
+2022-12-06 20:21:52.916040 (Thread-47): 20:21:52  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279e3f3820>]}
+2022-12-06 20:21:52.916585 (Thread-47): sending response (<Response 351 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:52.965813 (Thread-48): handling status request
+2022-12-06 20:21:52.966230 (Thread-48): 20:21:52  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279e3a09a0>]}
+2022-12-06 20:21:52.966798 (Thread-48): sending response (<Response 3873 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:53.266365 (Thread-49): handling status request
+2022-12-06 20:21:53.266868 (Thread-49): 20:21:53  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279e3dcd60>]}
+2022-12-06 20:21:53.267477 (Thread-49): sending response (<Response 3856 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:53.272286 (Thread-50): handling list request
+2022-12-06 20:21:53.272571 (Thread-50): 20:21:53  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279e3a4b20>]}
+2022-12-06 20:21:53.298759 (Thread-50): 20:21:53  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279e390160>]}
+2022-12-06 20:21:53.299363 (Thread-50): 20:21:53  Found 4 models, 21 tests, 0 snapshots, 0 analyses, 491 macros, 0 operations, 1 seed file, 0 sources, 0 exposures, 0 metrics
+2022-12-06 20:21:53.299704 (Thread-50): 20:21:53  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27c35288b0>]}
+2022-12-06 20:21:53.300415 (Thread-50): 20:21:53  The selection criterion '+dbt_project.yml+' does not match any nodes
+2022-12-06 20:21:53.300559 (Thread-50): 20:21:53  No nodes selected!
+2022-12-06 20:21:53.302240 (Thread-50): sending response (<Response 2532 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:53.976886 (Thread-51): handling ps request
+2022-12-06 20:21:53.977338 (Thread-51): 20:21:53  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279e3a49d0>]}
+2022-12-06 20:21:53.977914 (Thread-51): sending response (<Response 782 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:54.367817 (Thread-52): handling status request
+2022-12-06 20:21:54.368230 (Thread-52): 20:21:54  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279e3751c0>]}
+2022-12-06 20:21:54.368770 (Thread-52): sending response (<Response 3873 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:54.411101 (Thread-53): handling poll request
+2022-12-06 20:21:54.411504 (Thread-53): 20:21:54  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279e3090a0>]}
+2022-12-06 20:21:54.412170 (Thread-53): sending response (<Response 5306 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:54.766124 (Thread-54): handling status request
+2022-12-06 20:21:54.766540 (Thread-54): 20:21:54  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279e2ea0d0>]}
+2022-12-06 20:21:54.767085 (Thread-54): sending response (<Response 3856 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:21:54.771883 (Thread-55): handling list request
+2022-12-06 20:21:54.772195 (Thread-55): 20:21:54  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279e393f10>]}
+2022-12-06 20:21:54.803816 (Thread-55): 20:21:54  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279e388b50>]}
+2022-12-06 20:21:54.804437 (Thread-55): 20:21:54  Found 4 models, 21 tests, 0 snapshots, 0 analyses, 491 macros, 0 operations, 1 seed file, 0 sources, 0 exposures, 0 metrics
+2022-12-06 20:21:54.804743 (Thread-55): 20:21:54  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27c3528820>]}
+2022-12-06 20:21:54.805343 (Thread-55): 20:21:54  The selection criterion '+dbt_project.yml+' does not match any nodes
+2022-12-06 20:21:54.805486 (Thread-55): 20:21:54  No nodes selected!
+2022-12-06 20:21:54.807159 (Thread-55): sending response (<Response 2532 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:00.834722 (Thread-56): handling cli_args request
+2022-12-06 20:22:00.835149 (Thread-56): 20:22:00  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279e393a60>]}
+2022-12-06 20:22:03.519844 (Thread-56): sending response (<Response 133 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:03.599773 (MainThread): 20:22:03  Unable to do partial parsing because config vars, config profile, or config target have changed
+2022-12-06 20:22:03.600309 (MainThread): 20:22:03  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6bdc4325-e07e-4762-a84c-b98008f28477', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ea52b0970>]}
+2022-12-06 20:22:03.834079 (MainThread): 20:22:03  Parsing macros/grant_select_on_schema.sql
+2022-12-06 20:22:03.835664 (MainThread): 20:22:03  Parsing macros/apply_grants.sql
+2022-12-06 20:22:03.837523 (MainThread): 20:22:03  Parsing macros/catalog.sql
+2022-12-06 20:22:03.839425 (MainThread): 20:22:03  Parsing macros/adapters.sql
+2022-12-06 20:22:03.881370 (MainThread): 20:22:03  Parsing macros/materializations/seed.sql
+2022-12-06 20:22:03.886500 (MainThread): 20:22:03  Parsing macros/materializations/incremental.sql
+2022-12-06 20:22:03.897341 (MainThread): 20:22:03  Parsing macros/materializations/test.sql
+2022-12-06 20:22:03.898363 (MainThread): 20:22:03  Parsing macros/materializations/snapshot.sql
+2022-12-06 20:22:03.899283 (MainThread): 20:22:03  Parsing macros/materializations/merge.sql
+2022-12-06 20:22:03.903185 (MainThread): 20:22:03  Parsing macros/materializations/table.sql
+2022-12-06 20:22:03.908699 (MainThread): 20:22:03  Parsing macros/materializations/view.sql
+2022-12-06 20:22:03.910008 (MainThread): 20:22:03  Parsing macros/utils/escape_single_quotes.sql
+2022-12-06 20:22:03.910552 (MainThread): 20:22:03  Parsing macros/utils/safe_cast.sql
+2022-12-06 20:22:03.911032 (MainThread): 20:22:03  Parsing macros/utils/array_construct.sql
+2022-12-06 20:22:03.911554 (MainThread): 20:22:03  Parsing macros/utils/timestamps.sql
+2022-12-06 20:22:03.913607 (MainThread): 20:22:03  Parsing macros/utils/right.sql
+2022-12-06 20:22:03.914220 (MainThread): 20:22:03  Parsing macros/utils/bool_or.sql
+2022-12-06 20:22:03.914654 (MainThread): 20:22:03  Parsing macros/etc/statement.sql
+2022-12-06 20:22:03.919859 (MainThread): 20:22:03  Parsing macros/etc/datetime.sql
+2022-12-06 20:22:03.927870 (MainThread): 20:22:03  Parsing macros/adapters/apply_grants.sql
+2022-12-06 20:22:03.947609 (MainThread): 20:22:03  Parsing macros/adapters/freshness.sql
+2022-12-06 20:22:03.949779 (MainThread): 20:22:03  Parsing macros/adapters/columns.sql
+2022-12-06 20:22:03.959501 (MainThread): 20:22:03  Parsing macros/adapters/timestamps.sql
+2022-12-06 20:22:03.963148 (MainThread): 20:22:03  Parsing macros/adapters/relation.sql
+2022-12-06 20:22:03.977941 (MainThread): 20:22:03  Parsing macros/adapters/schema.sql
+2022-12-06 20:22:03.980072 (MainThread): 20:22:03  Parsing macros/adapters/persist_docs.sql
+2022-12-06 20:22:03.985006 (MainThread): 20:22:03  Parsing macros/adapters/metadata.sql
+2022-12-06 20:22:03.992163 (MainThread): 20:22:03  Parsing macros/adapters/indexes.sql
+2022-12-06 20:22:03.994836 (MainThread): 20:22:03  Parsing macros/get_custom_name/get_custom_database.sql
+2022-12-06 20:22:03.996498 (MainThread): 20:22:03  Parsing macros/get_custom_name/get_custom_schema.sql
+2022-12-06 20:22:03.998881 (MainThread): 20:22:03  Parsing macros/get_custom_name/get_custom_alias.sql
+2022-12-06 20:22:04.000265 (MainThread): 20:22:04  Parsing macros/python_model/python.sql
+2022-12-06 20:22:04.006288 (MainThread): 20:22:04  Parsing macros/materializations/hooks.sql
+2022-12-06 20:22:04.010264 (MainThread): 20:22:04  Parsing macros/materializations/configs.sql
+2022-12-06 20:22:04.012597 (MainThread): 20:22:04  Parsing macros/materializations/seeds/seed.sql
+2022-12-06 20:22:04.019707 (MainThread): 20:22:04  Parsing macros/materializations/seeds/helpers.sql
+2022-12-06 20:22:04.056927 (Thread-57): handling poll request
+2022-12-06 20:22:04.057519 (Thread-57): 20:22:04  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279e26d8b0>]}
+2022-12-06 20:22:04.058721 (Thread-57): sending response (<Response 11584 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:04.037351 (MainThread): 20:22:04  Parsing macros/materializations/tests/test.sql
+2022-12-06 20:22:04.041742 (MainThread): 20:22:04  Parsing macros/materializations/tests/helpers.sql
+2022-12-06 20:22:04.043655 (MainThread): 20:22:04  Parsing macros/materializations/tests/where_subquery.sql
+2022-12-06 20:22:04.045439 (MainThread): 20:22:04  Parsing macros/materializations/models/view/helpers.sql
+2022-12-06 20:22:04.046686 (MainThread): 20:22:04  Parsing macros/materializations/models/view/create_or_replace_view.sql
+2022-12-06 20:22:04.049932 (MainThread): 20:22:04  Parsing macros/materializations/models/view/create_view_as.sql
+2022-12-06 20:22:04.052123 (MainThread): 20:22:04  Parsing macros/materializations/models/view/view.sql
+2022-12-06 20:22:04.057448 (MainThread): 20:22:04  Parsing macros/materializations/models/incremental/strategies.sql
+2022-12-06 20:22:04.064631 (MainThread): 20:22:04  Parsing macros/materializations/models/incremental/column_helpers.sql
+2022-12-06 20:22:04.072842 (MainThread): 20:22:04  Parsing macros/materializations/models/incremental/incremental.sql
+2022-12-06 20:22:04.083166 (MainThread): 20:22:04  Parsing macros/materializations/models/incremental/on_schema_change.sql
+2022-12-06 20:22:04.100216 (MainThread): 20:22:04  Parsing macros/materializations/models/incremental/is_incremental.sql
+2022-12-06 20:22:04.101773 (MainThread): 20:22:04  Parsing macros/materializations/models/incremental/merge.sql
+2022-12-06 20:22:04.117203 (MainThread): 20:22:04  Parsing macros/materializations/models/table/create_table_as.sql
+2022-12-06 20:22:04.121069 (MainThread): 20:22:04  Parsing macros/materializations/models/table/table.sql
+2022-12-06 20:22:04.126623 (MainThread): 20:22:04  Parsing macros/materializations/snapshots/strategies.sql
+2022-12-06 20:22:04.142615 (MainThread): 20:22:04  Parsing macros/materializations/snapshots/snapshot_merge.sql
+2022-12-06 20:22:04.144298 (MainThread): 20:22:04  Parsing macros/materializations/snapshots/snapshot.sql
+2022-12-06 20:22:04.154393 (Thread-58): handling ps request
+2022-12-06 20:22:04.154738 (Thread-58): 20:22:04  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bbf3c40>]}
+2022-12-06 20:22:04.155402 (Thread-58): sending response (<Response 1470 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:04.156435 (MainThread): 20:22:04  Parsing macros/materializations/snapshots/helpers.sql
+2022-12-06 20:22:04.169472 (MainThread): 20:22:04  Parsing macros/generic_test_sql/not_null.sql
+2022-12-06 20:22:04.170342 (MainThread): 20:22:04  Parsing macros/generic_test_sql/relationships.sql
+2022-12-06 20:22:04.171235 (MainThread): 20:22:04  Parsing macros/generic_test_sql/unique.sql
+2022-12-06 20:22:04.171934 (MainThread): 20:22:04  Parsing macros/generic_test_sql/accepted_values.sql
+2022-12-06 20:22:04.173406 (MainThread): 20:22:04  Parsing macros/utils/intersect.sql
+2022-12-06 20:22:04.174220 (MainThread): 20:22:04  Parsing macros/utils/position.sql
+2022-12-06 20:22:04.175466 (MainThread): 20:22:04  Parsing macros/utils/escape_single_quotes.sql
+2022-12-06 20:22:04.176651 (MainThread): 20:22:04  Parsing macros/utils/safe_cast.sql
+2022-12-06 20:22:04.177826 (MainThread): 20:22:04  Parsing macros/utils/array_construct.sql
+2022-12-06 20:22:04.179321 (MainThread): 20:22:04  Parsing macros/utils/cast_bool_to_text.sql
+2022-12-06 20:22:04.180478 (MainThread): 20:22:04  Parsing macros/utils/datediff.sql
+2022-12-06 20:22:04.181777 (MainThread): 20:22:04  Parsing macros/utils/concat.sql
+2022-12-06 20:22:04.182723 (MainThread): 20:22:04  Parsing macros/utils/length.sql
+2022-12-06 20:22:04.183639 (MainThread): 20:22:04  Parsing macros/utils/any_value.sql
+2022-12-06 20:22:04.184623 (MainThread): 20:22:04  Parsing macros/utils/data_types.sql
+2022-12-06 20:22:04.191910 (MainThread): 20:22:04  Parsing macros/utils/array_concat.sql
+2022-12-06 20:22:04.193089 (MainThread): 20:22:04  Parsing macros/utils/right.sql
+2022-12-06 20:22:04.194217 (MainThread): 20:22:04  Parsing macros/utils/array_append.sql
+2022-12-06 20:22:04.195346 (MainThread): 20:22:04  Parsing macros/utils/last_day.sql
+2022-12-06 20:22:04.197462 (MainThread): 20:22:04  Parsing macros/utils/split_part.sql
+2022-12-06 20:22:04.199476 (MainThread): 20:22:04  Parsing macros/utils/date_trunc.sql
+2022-12-06 20:22:04.200838 (MainThread): 20:22:04  Parsing macros/utils/literal.sql
+2022-12-06 20:22:04.202002 (MainThread): 20:22:04  Parsing macros/utils/hash.sql
+2022-12-06 20:22:04.203146 (MainThread): 20:22:04  Parsing macros/utils/except.sql
+2022-12-06 20:22:04.203958 (MainThread): 20:22:04  Parsing macros/utils/bool_or.sql
+2022-12-06 20:22:04.204927 (MainThread): 20:22:04  Parsing macros/utils/replace.sql
+2022-12-06 20:22:04.206381 (MainThread): 20:22:04  Parsing macros/utils/dateadd.sql
+2022-12-06 20:22:04.207660 (MainThread): 20:22:04  Parsing macros/utils/listagg.sql
+2022-12-06 20:22:04.209998 (MainThread): 20:22:04  Parsing tests/generic/builtin.sql
+2022-12-06 20:22:04.213094 (MainThread): 20:22:04  Parsing macros/sql/pivot.sql
+2022-12-06 20:22:04.217433 (MainThread): 20:22:04  Parsing macros/sql/star.sql
+2022-12-06 20:22:04.221290 (MainThread): 20:22:04  Parsing macros/sql/surrogate_key.sql
+2022-12-06 20:22:04.224733 (MainThread): 20:22:04  Parsing macros/sql/get_query_results_as_dict.sql
+2022-12-06 20:22:04.227195 (MainThread): 20:22:04  Parsing macros/sql/date_spine.sql
+2022-12-06 20:22:04.231989 (MainThread): 20:22:04  Parsing macros/sql/get_column_values.sql
+2022-12-06 20:22:04.236904 (MainThread): 20:22:04  Parsing macros/sql/groupby.sql
+2022-12-06 20:22:04.238370 (MainThread): 20:22:04  Parsing macros/sql/get_tables_by_pattern_sql.sql
+2022-12-06 20:22:04.244658 (MainThread): 20:22:04  Parsing macros/sql/nullcheck_table.sql
+2022-12-06 20:22:04.246332 (MainThread): 20:22:04  Parsing macros/sql/get_tables_by_prefix_sql.sql
+2022-12-06 20:22:04.310788 (Thread-59): handling ps request
+2022-12-06 20:22:04.311213 (Thread-59): 20:22:04  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bc0adc0>]}
+2022-12-06 20:22:04.312035 (Thread-59): sending response (<Response 1469 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:04.248069 (MainThread): 20:22:04  Parsing macros/sql/get_relations_by_pattern.sql
+2022-12-06 20:22:04.251453 (MainThread): 20:22:04  Parsing macros/sql/get_relations_by_prefix.sql
+2022-12-06 20:22:04.255165 (MainThread): 20:22:04  Parsing macros/sql/safe_add.sql
+2022-12-06 20:22:04.256794 (MainThread): 20:22:04  Parsing macros/sql/haversine_distance.sql
+2022-12-06 20:22:04.331732 (Thread-60): handling status request
+2022-12-06 20:22:04.332083 (Thread-60): 20:22:04  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bbf34c0>]}
+2022-12-06 20:22:04.332689 (Thread-60): sending response (<Response 3873 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:04.262522 (MainThread): 20:22:04  Parsing macros/sql/unpivot.sql
+2022-12-06 20:22:04.271217 (MainThread): 20:22:04  Parsing macros/sql/generate_series.sql
+2022-12-06 20:22:04.275627 (MainThread): 20:22:04  Parsing macros/sql/nullcheck.sql
+2022-12-06 20:22:04.277233 (MainThread): 20:22:04  Parsing macros/sql/union.sql
+2022-12-06 20:22:04.285548 (MainThread): 20:22:04  Parsing macros/materializations/insert_by_period_materialization.sql
+2022-12-06 20:22:04.310046 (MainThread): 20:22:04  Parsing macros/jinja_helpers/pretty_time.sql
+2022-12-06 20:22:04.311387 (MainThread): 20:22:04  Parsing macros/jinja_helpers/slugify.sql
+2022-12-06 20:22:04.312547 (MainThread): 20:22:04  Parsing macros/jinja_helpers/log_info.sql
+2022-12-06 20:22:04.313667 (MainThread): 20:22:04  Parsing macros/jinja_helpers/pretty_log_format.sql
+2022-12-06 20:22:04.314715 (MainThread): 20:22:04  Parsing macros/web/get_url_parameter.sql
+2022-12-06 20:22:04.316288 (MainThread): 20:22:04  Parsing macros/web/get_url_path.sql
+2022-12-06 20:22:04.318737 (MainThread): 20:22:04  Parsing macros/web/get_url_host.sql
+2022-12-06 20:22:04.320640 (MainThread): 20:22:04  Parsing macros/schema_tests/expression_is_true.sql
+2022-12-06 20:22:04.322502 (MainThread): 20:22:04  Parsing macros/schema_tests/not_constant.sql
+2022-12-06 20:22:04.323664 (MainThread): 20:22:04  Parsing macros/schema_tests/sequential_values.sql
+2022-12-06 20:22:04.326413 (MainThread): 20:22:04  Parsing macros/schema_tests/not_null_proportion.sql
+2022-12-06 20:22:04.328447 (MainThread): 20:22:04  Parsing macros/schema_tests/at_least_one.sql
+2022-12-06 20:22:04.329820 (MainThread): 20:22:04  Parsing macros/schema_tests/equality.sql
+2022-12-06 20:22:04.333443 (MainThread): 20:22:04  Parsing macros/schema_tests/test_not_null_where.sql
+2022-12-06 20:22:04.334823 (MainThread): 20:22:04  Parsing macros/schema_tests/equal_rowcount.sql
+2022-12-06 20:22:04.336580 (MainThread): 20:22:04  Parsing macros/schema_tests/not_accepted_values.sql
+2022-12-06 20:22:04.338668 (MainThread): 20:22:04  Parsing macros/schema_tests/test_unique_where.sql
+2022-12-06 20:22:04.340041 (MainThread): 20:22:04  Parsing macros/schema_tests/mutually_exclusive_ranges.sql
+2022-12-06 20:22:04.348864 (MainThread): 20:22:04  Parsing macros/schema_tests/relationships_where.sql
+2022-12-06 20:22:04.351027 (MainThread): 20:22:04  Parsing macros/schema_tests/accepted_range.sql
+2022-12-06 20:22:04.353462 (MainThread): 20:22:04  Parsing macros/schema_tests/fewer_rows_than.sql
+2022-12-06 20:22:04.355243 (MainThread): 20:22:04  Parsing macros/schema_tests/unique_combination_of_columns.sql
+2022-12-06 20:22:04.358047 (MainThread): 20:22:04  Parsing macros/schema_tests/recency.sql
+2022-12-06 20:22:04.359728 (MainThread): 20:22:04  Parsing macros/schema_tests/cardinality_equality.sql
+2022-12-06 20:22:04.361615 (MainThread): 20:22:04  Parsing macros/cross_db_utils/split_part.sql
+2022-12-06 20:22:04.363431 (MainThread): 20:22:04  Parsing macros/cross_db_utils/length.sql
+2022-12-06 20:22:04.364665 (MainThread): 20:22:04  Parsing macros/cross_db_utils/current_timestamp.sql
+2022-12-06 20:22:04.368215 (MainThread): 20:22:04  Parsing macros/cross_db_utils/right.sql
+2022-12-06 20:22:04.370360 (MainThread): 20:22:04  Parsing macros/cross_db_utils/hash.sql
+2022-12-06 20:22:04.371679 (MainThread): 20:22:04  Parsing macros/cross_db_utils/replace.sql
+2022-12-06 20:22:04.373055 (MainThread): 20:22:04  Parsing macros/cross_db_utils/cast_bool_to_text.sql
+2022-12-06 20:22:04.374584 (MainThread): 20:22:04  Parsing macros/cross_db_utils/concat.sql
+2022-12-06 20:22:04.375645 (MainThread): 20:22:04  Parsing macros/cross_db_utils/_is_relation.sql
+2022-12-06 20:22:04.376798 (MainThread): 20:22:04  Parsing macros/cross_db_utils/identifier.sql
+2022-12-06 20:22:04.378742 (MainThread): 20:22:04  Parsing macros/cross_db_utils/datediff.sql
+2022-12-06 20:22:04.388313 (MainThread): 20:22:04  Parsing macros/cross_db_utils/dateadd.sql
+2022-12-06 20:22:04.391069 (MainThread): 20:22:04  Parsing macros/cross_db_utils/datatypes.sql
+2022-12-06 20:22:04.396969 (MainThread): 20:22:04  Parsing macros/cross_db_utils/position.sql
+2022-12-06 20:22:04.398585 (MainThread): 20:22:04  Parsing macros/cross_db_utils/literal.sql
+2022-12-06 20:22:04.399473 (MainThread): 20:22:04  Parsing macros/cross_db_utils/_is_ephemeral.sql
+2022-12-06 20:22:04.401278 (MainThread): 20:22:04  Parsing macros/cross_db_utils/width_bucket.sql
+2022-12-06 20:22:04.406453 (MainThread): 20:22:04  Parsing macros/cross_db_utils/date_trunc.sql
+2022-12-06 20:22:04.407871 (MainThread): 20:22:04  Parsing macros/cross_db_utils/except.sql
+2022-12-06 20:22:04.409097 (MainThread): 20:22:04  Parsing macros/cross_db_utils/safe_cast.sql
+2022-12-06 20:22:04.411198 (MainThread): 20:22:04  Parsing macros/cross_db_utils/last_day.sql
+2022-12-06 20:22:04.414695 (MainThread): 20:22:04  Parsing macros/cross_db_utils/intersect.sql
+2022-12-06 20:22:04.888412 (MainThread): 20:22:04  1699: static parser successfully parsed customer_revenue_by_month.sql
+2022-12-06 20:22:04.900678 (MainThread): 20:22:04  1699: static parser successfully parsed customer_churn_month.sql
+2022-12-06 20:22:04.903180 (MainThread): 20:22:04  1603: static parser failed on mrr.sql
+2022-12-06 20:22:04.913944 (MainThread): 20:22:04  
+Warning: the `surrogate_key` macro now takes a single list argument instead of multiple string arguments. Support for multiple string arguments will be deprecated in a future release of dbt-utils. The acme.mrr model triggered this warning. 
+2022-12-06 20:22:04.922497 (MainThread): 20:22:04  1602: parser fallback to jinja rendering on mrr.sql
+2022-12-06 20:22:04.923796 (MainThread): 20:22:04  1603: static parser failed on utils/util_months.sql
+2022-12-06 20:22:04.953771 (MainThread): 20:22:04  1602: parser fallback to jinja rendering on utils/util_months.sql
+2022-12-06 20:22:05.000238 (MainThread): 20:22:05  [WARNING]: 'subscription_periods' is a seed node, but it is specified in the models section
+of models/schema.yml. To fix this error, place the `subscription_periods`
+specification under the seeds key instead.
+2022-12-06 20:22:05.175134 (MainThread): 20:22:05  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6bdc4325-e07e-4762-a84c-b98008f28477', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e8c6e1e50>]}
+2022-12-06 20:22:05.202218 (MainThread): 20:22:05  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6bdc4325-e07e-4762-a84c-b98008f28477', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ea5263b80>]}
+2022-12-06 20:22:05.202537 (MainThread): 20:22:05  Found 4 models, 21 tests, 0 snapshots, 0 analyses, 491 macros, 0 operations, 1 seed file, 0 sources, 0 exposures, 0 metrics
+2022-12-06 20:22:05.202643 (MainThread): 20:22:05  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6bdc4325-e07e-4762-a84c-b98008f28477', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ea5251c70>]}
+2022-12-06 20:22:05.204129 (MainThread): 20:22:05  
+2022-12-06 20:22:05.204645 (MainThread): 20:22:05  Acquiring new snowflake connection "master"
+2022-12-06 20:22:05.206128 (ThreadPoolExecutor-0_0): 20:22:05  Acquiring new snowflake connection "list_MRR_ANALYSIS"
+2022-12-06 20:22:05.215685 (ThreadPoolExecutor-0_0): 20:22:05  Using snowflake connection "list_MRR_ANALYSIS"
+2022-12-06 20:22:05.215787 (ThreadPoolExecutor-0_0): 20:22:05  On list_MRR_ANALYSIS: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "connection_name": "list_MRR_ANALYSIS"} */
+show terse schemas in database MRR_ANALYSIS
+    limit 10000
+2022-12-06 20:22:05.215867 (ThreadPoolExecutor-0_0): 20:22:05  Opening a new connection, currently in state init
+2022-12-06 20:22:05.557673 (Thread-61): handling poll request
+2022-12-06 20:22:05.558090 (Thread-61): 20:22:05  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bc19bb0>]}
+2022-12-06 20:22:05.559673 (Thread-61): sending response (<Response 40353 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:05.827612 (ThreadPoolExecutor-0_0): 20:22:05  SQL status: SUCCESS 3 in 0.61 seconds
+2022-12-06 20:22:05.829709 (ThreadPoolExecutor-0_0): 20:22:05  On list_MRR_ANALYSIS: Close
+2022-12-06 20:22:05.889522 (ThreadPoolExecutor-0_0): 20:22:05  Acquiring new snowflake connection "create_MRR_ANALYSIS_MRR_ANALYSIS"
+2022-12-06 20:22:05.890013 (ThreadPoolExecutor-0_0): 20:22:05  Acquiring new snowflake connection "create_MRR_ANALYSIS_MRR_ANALYSIS"
+2022-12-06 20:22:05.890267 (ThreadPoolExecutor-0_0): 20:22:05  Creating schema "_ReferenceKey(database='mrr_analysis', schema='mrr_analysis', identifier=None)"
+2022-12-06 20:22:05.897581 (ThreadPoolExecutor-0_0): 20:22:05  Using snowflake connection "create_MRR_ANALYSIS_MRR_ANALYSIS"
+2022-12-06 20:22:05.897696 (ThreadPoolExecutor-0_0): 20:22:05  On create_MRR_ANALYSIS_MRR_ANALYSIS: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "connection_name": "create_MRR_ANALYSIS_MRR_ANALYSIS"} */
+create schema if not exists MRR_ANALYSIS.MRR_ANALYSIS
+2022-12-06 20:22:05.897790 (ThreadPoolExecutor-0_0): 20:22:05  Opening a new connection, currently in state closed
+2022-12-06 20:22:06.371539 (ThreadPoolExecutor-0_0): 20:22:06  SQL status: SUCCESS 1 in 0.47 seconds
+2022-12-06 20:22:06.372428 (ThreadPoolExecutor-0_0): 20:22:06  On create_MRR_ANALYSIS_MRR_ANALYSIS: Close
+2022-12-06 20:22:06.431384 (ThreadPoolExecutor-2_0): 20:22:06  Acquiring new snowflake connection "list_MRR_ANALYSIS_MRR_ANALYSIS"
+2022-12-06 20:22:06.439049 (ThreadPoolExecutor-2_0): 20:22:06  Using snowflake connection "list_MRR_ANALYSIS_MRR_ANALYSIS"
+2022-12-06 20:22:06.439205 (ThreadPoolExecutor-2_0): 20:22:06  On list_MRR_ANALYSIS_MRR_ANALYSIS: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "connection_name": "list_MRR_ANALYSIS_MRR_ANALYSIS"} */
+show terse objects in MRR_ANALYSIS.MRR_ANALYSIS
+2022-12-06 20:22:06.439292 (ThreadPoolExecutor-2_0): 20:22:06  Opening a new connection, currently in state closed
+2022-12-06 20:22:06.564215 (Thread-62): handling ps request
+2022-12-06 20:22:06.564670 (Thread-62): 20:22:06  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bc19cd0>]}
+2022-12-06 20:22:06.565288 (Thread-62): sending response (<Response 1470 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:06.702873 (ThreadPoolExecutor-2_0): 20:22:06  SQL status: SUCCESS 0 in 0.26 seconds
+2022-12-06 20:22:06.704163 (ThreadPoolExecutor-2_0): 20:22:06  On list_MRR_ANALYSIS_MRR_ANALYSIS: Close
+2022-12-06 20:22:06.774784 (MainThread): 20:22:06  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6bdc4325-e07e-4762-a84c-b98008f28477', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f0434d670>]}
+2022-12-06 20:22:06.775564 (MainThread): 20:22:06  Concurrency: 4 threads (target='default')
+2022-12-06 20:22:06.775709 (MainThread): 20:22:06  
+2022-12-06 20:22:06.778417 (Thread-1): 20:22:06  Began running node seed.acme.subscription_periods
+2022-12-06 20:22:06.778737 (Thread-1): 20:22:06  1 of 1 START seed file MRR_ANALYSIS.subscription_periods ....................... [RUN]
+2022-12-06 20:22:06.779193 (Thread-1): 20:22:06  Acquiring new snowflake connection "seed.acme.subscription_periods"
+2022-12-06 20:22:06.779331 (Thread-1): 20:22:06  Began compiling node seed.acme.subscription_periods
+2022-12-06 20:22:06.779471 (Thread-1): 20:22:06  finished collecting timing info
+2022-12-06 20:22:06.779614 (Thread-1): 20:22:06  Began executing node seed.acme.subscription_periods
+2022-12-06 20:22:06.825861 (Thread-1): 20:22:06  Using snowflake connection "seed.acme.subscription_periods"
+2022-12-06 20:22:06.826024 (Thread-1): 20:22:06  On seed.acme.subscription_periods: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "seed.acme.subscription_periods"} */
+create table MRR_ANALYSIS.MRR_ANALYSIS.subscription_periods (subscription_id integer,customer_id integer,start_date date,end_date date,monthly_amount integer)
+2022-12-06 20:22:06.826156 (Thread-1): 20:22:06  Opening a new connection, currently in state closed
+2022-12-06 20:22:06.974198 (Thread-63): handling status request
+2022-12-06 20:22:06.974613 (Thread-63): 20:22:06  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bc1f910>]}
+2022-12-06 20:22:06.997897 (Thread-63): sending response (<Response 3873 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:07.025273 (Thread-64): handling poll request
+2022-12-06 20:22:07.025678 (Thread-64): 20:22:07  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bc1fc70>]}
+2022-12-06 20:22:07.026437 (Thread-64): sending response (<Response 10799 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:07.229703 (Thread-1): 20:22:07  SQL status: SUCCESS 1 in 0.4 seconds
+2022-12-06 20:22:07.247970 (Thread-1): 20:22:07  Using snowflake connection "seed.acme.subscription_periods"
+2022-12-06 20:22:07.248134 (Thread-1): 20:22:07  On seed.acme.subscription_periods: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "seed.acme.subscription_periods"} */
+BEGIN
+2022-12-06 20:22:07.306163 (Thread-1): 20:22:07  SQL status: SUCCESS 1 in 0.06 seconds
+2022-12-06 20:22:07.309162 (Thread-1): 20:22:07  Using snowflake connection "seed.acme.subscription_periods"
+2022-12-06 20:22:07.309291 (Thread-1): 20:22:07  On seed.acme.subscription_periods: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "seed.acme.subscription_periods"} */
+insert into MRR_ANALYSIS.MRR_ANALYSIS.subscription_periods (subscription_id, customer_id, start_date, end_date, monthly_amount) values
+            (%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,...
+2022-12-06 20:22:08.410993 (Thread-65): handling poll request
+2022-12-06 20:22:08.411409 (Thread-65): 20:22:08  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bc1fe20>]}
+2022-12-06 20:22:08.411983 (Thread-65): sending response (<Response 3053 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:08.576190 (Thread-1): 20:22:08  SQL status: SUCCESS 121 in 1.27 seconds
+2022-12-06 20:22:08.576531 (Thread-1): 20:22:08  Using snowflake connection "seed.acme.subscription_periods"
+2022-12-06 20:22:08.576680 (Thread-1): 20:22:08  On seed.acme.subscription_periods: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "seed.acme.subscription_periods"} */
+COMMIT
+2022-12-06 20:22:08.731006 (Thread-1): 20:22:08  SQL status: SUCCESS 1 in 0.15 seconds
+2022-12-06 20:22:08.742713 (Thread-1): 20:22:08  Writing runtime SQL for node "seed.acme.subscription_periods"
+2022-12-06 20:22:08.797955 (Thread-1): 20:22:08  finished collecting timing info
+2022-12-06 20:22:08.798174 (Thread-1): 20:22:08  On seed.acme.subscription_periods: Close
+2022-12-06 20:22:08.858312 (Thread-1): 20:22:08  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6bdc4325-e07e-4762-a84c-b98008f28477', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f03dab160>]}
+2022-12-06 20:22:08.858654 (Thread-1): 20:22:08  1 of 1 OK loaded seed file MRR_ANALYSIS.subscription_periods ................... [INSERT 121 in 2.08s]
+2022-12-06 20:22:08.858925 (Thread-1): 20:22:08  Finished running node seed.acme.subscription_periods
+2022-12-06 20:22:08.860800 (MainThread): 20:22:08  Acquiring new snowflake connection "master"
+2022-12-06 20:22:08.861357 (MainThread): 20:22:08  
+2022-12-06 20:22:08.861476 (MainThread): 20:22:08  Finished running 1 seed in 0 hours 0 minutes and 3.66 seconds (3.66s).
+2022-12-06 20:22:08.861561 (MainThread): 20:22:08  Connection 'master' was properly closed.
+2022-12-06 20:22:08.861626 (MainThread): 20:22:08  Connection 'seed.acme.subscription_periods' was properly closed.
+2022-12-06 20:22:08.920529 (MainThread): 20:22:08  
+2022-12-06 20:22:08.920764 (MainThread): 20:22:08  Completed successfully
+2022-12-06 20:22:08.920903 (MainThread): 20:22:08  
+2022-12-06 20:22:08.921002 (MainThread): 20:22:08  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+2022-12-06 20:22:08.951663 (Thread-66): handling ps request
+2022-12-06 20:22:08.952088 (Thread-66): 20:22:08  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bbd4a90>]}
+2022-12-06 20:22:08.952740 (Thread-66): sending response (<Response 1470 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:09.339770 (Thread-67): handling status request
+2022-12-06 20:22:09.340405 (Thread-67): 20:22:09  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bbd4a00>]}
+2022-12-06 20:22:09.341405 (Thread-67): sending response (<Response 3873 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:09.801334 (Thread-68): handling poll request
+2022-12-06 20:22:09.801739 (Thread-68): 20:22:09  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bbd4d90>]}
+2022-12-06 20:22:09.802740 (Thread-68): sending response (<Response 9544 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:10.208789 (Thread-69): handling status request
+2022-12-06 20:22:10.209265 (Thread-69): 20:22:10  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bbd4be0>]}
+2022-12-06 20:22:10.209820 (Thread-69): sending response (<Response 3856 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:10.216796 (Thread-70): handling list request
+2022-12-06 20:22:10.217082 (Thread-70): 20:22:10  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bbd4e50>]}
+2022-12-06 20:22:10.247806 (Thread-70): 20:22:10  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bbd4ca0>]}
+2022-12-06 20:22:10.248389 (Thread-70): 20:22:10  Found 4 models, 21 tests, 0 snapshots, 0 analyses, 491 macros, 0 operations, 1 seed file, 0 sources, 0 exposures, 0 metrics
+2022-12-06 20:22:10.248715 (Thread-70): 20:22:10  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279e3b4a30>]}
+2022-12-06 20:22:10.249471 (Thread-70): 20:22:10  The selection criterion '+dbt_project.yml+' does not match any nodes
+2022-12-06 20:22:10.249613 (Thread-70): 20:22:10  No nodes selected!
+2022-12-06 20:22:10.251216 (Thread-70): sending response (<Response 2532 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:11.353547 (Thread-71): handling ps request
+2022-12-06 20:22:11.354032 (Thread-71): 20:22:11  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a32ac430>]}
+2022-12-06 20:22:11.354656 (Thread-71): sending response (<Response 1787 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:11.763083 (Thread-72): handling status request
+2022-12-06 20:22:11.763535 (Thread-72): 20:22:11  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bb1fca0>]}
+2022-12-06 20:22:11.764101 (Thread-72): sending response (<Response 3873 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:11.772662 (Thread-73): handling poll request
+2022-12-06 20:22:11.772994 (Thread-73): 20:22:11  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bb1fd00>]}
+2022-12-06 20:22:11.773673 (Thread-73): sending response (<Response 5306 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:12.129351 (Thread-74): handling status request
+2022-12-06 20:22:12.129776 (Thread-74): 20:22:12  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279baaa190>]}
+2022-12-06 20:22:12.130317 (Thread-74): sending response (<Response 3856 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:12.135291 (Thread-75): handling list request
+2022-12-06 20:22:12.135604 (Thread-75): 20:22:12  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279baaa3d0>]}
+2022-12-06 20:22:12.166708 (Thread-75): 20:22:12  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bb1ff10>]}
+2022-12-06 20:22:12.167289 (Thread-75): 20:22:12  Found 4 models, 21 tests, 0 snapshots, 0 analyses, 491 macros, 0 operations, 1 seed file, 0 sources, 0 exposures, 0 metrics
+2022-12-06 20:22:12.167590 (Thread-75): 20:22:12  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27a325ee50>]}
+2022-12-06 20:22:12.168118 (Thread-75): 20:22:12  The selection criterion '+dbt_project.yml+' does not match any nodes
+2022-12-06 20:22:12.168262 (Thread-75): 20:22:12  No nodes selected!
+2022-12-06 20:22:12.169969 (Thread-75): sending response (<Response 2532 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:16.572331 (Thread-76): handling cli_args request
+2022-12-06 20:22:16.572859 (Thread-76): 20:22:16  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bab6490>]}
+2022-12-06 20:22:19.300466 (Thread-76): sending response (<Response 133 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:19.546066 (MainThread): 20:22:19  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2022-12-06 20:22:19.546526 (MainThread): 20:22:19  Partial parsing enabled, no changes found, skipping parsing
+2022-12-06 20:22:19.554143 (MainThread): 20:22:19  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3cfc2503-f42d-4b77-aac4-b2f9121abb2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f24cf9b0e20>]}
+2022-12-06 20:22:19.581488 (MainThread): 20:22:19  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3cfc2503-f42d-4b77-aac4-b2f9121abb2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f24cfa4b760>]}
+2022-12-06 20:22:19.581830 (MainThread): 20:22:19  Found 4 models, 21 tests, 0 snapshots, 0 analyses, 491 macros, 0 operations, 1 seed file, 0 sources, 0 exposures, 0 metrics
+2022-12-06 20:22:19.581943 (MainThread): 20:22:19  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3cfc2503-f42d-4b77-aac4-b2f9121abb2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f24cfa4b7f0>]}
+2022-12-06 20:22:19.583519 (MainThread): 20:22:19  
+2022-12-06 20:22:19.584010 (MainThread): 20:22:19  Acquiring new snowflake connection "master"
+2022-12-06 20:22:19.585227 (ThreadPoolExecutor-0_0): 20:22:19  Acquiring new snowflake connection "list_MRR_ANALYSIS"
+2022-12-06 20:22:19.600756 (ThreadPoolExecutor-0_0): 20:22:19  Using snowflake connection "list_MRR_ANALYSIS"
+2022-12-06 20:22:19.600905 (ThreadPoolExecutor-0_0): 20:22:19  On list_MRR_ANALYSIS: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "connection_name": "list_MRR_ANALYSIS"} */
+show terse schemas in database MRR_ANALYSIS
+    limit 10000
+2022-12-06 20:22:19.600995 (ThreadPoolExecutor-0_0): 20:22:19  Opening a new connection, currently in state init
+2022-12-06 20:22:19.789095 (Thread-77): handling ps request
+2022-12-06 20:22:19.789605 (Thread-77): 20:22:19  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bac6040>]}
+2022-12-06 20:22:19.790582 (Thread-77): sending response (<Response 2474 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:19.813460 (Thread-78): handling poll request
+2022-12-06 20:22:19.813911 (Thread-78): 20:22:19  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bad0040>]}
+2022-12-06 20:22:19.814583 (Thread-78): sending response (<Response 4717 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:20.020384 (Thread-79): handling ps request
+2022-12-06 20:22:20.020787 (Thread-79): 20:22:20  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bac6820>]}
+2022-12-06 20:22:20.021460 (Thread-79): sending response (<Response 2473 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:20.060831 (Thread-80): handling status request
+2022-12-06 20:22:20.061274 (Thread-80): 20:22:20  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bac6a00>]}
+2022-12-06 20:22:20.061891 (Thread-80): sending response (<Response 3873 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:20.118257 (ThreadPoolExecutor-0_0): 20:22:20  SQL status: SUCCESS 4 in 0.52 seconds
+2022-12-06 20:22:20.120322 (ThreadPoolExecutor-0_0): 20:22:20  On list_MRR_ANALYSIS: Close
+2022-12-06 20:22:20.189551 (ThreadPoolExecutor-2_0): 20:22:20  Acquiring new snowflake connection "list_MRR_ANALYSIS_MRR_ANALYSIS"
+2022-12-06 20:22:20.197854 (ThreadPoolExecutor-2_0): 20:22:20  Using snowflake connection "list_MRR_ANALYSIS_MRR_ANALYSIS"
+2022-12-06 20:22:20.197991 (ThreadPoolExecutor-2_0): 20:22:20  On list_MRR_ANALYSIS_MRR_ANALYSIS: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "connection_name": "list_MRR_ANALYSIS_MRR_ANALYSIS"} */
+show terse objects in MRR_ANALYSIS.MRR_ANALYSIS
+2022-12-06 20:22:20.198091 (ThreadPoolExecutor-2_0): 20:22:20  Opening a new connection, currently in state closed
+2022-12-06 20:22:20.464796 (ThreadPoolExecutor-2_0): 20:22:20  SQL status: SUCCESS 1 in 0.27 seconds
+2022-12-06 20:22:20.466269 (ThreadPoolExecutor-2_0): 20:22:20  On list_MRR_ANALYSIS_MRR_ANALYSIS: Close
+2022-12-06 20:22:20.522048 (MainThread): 20:22:20  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3cfc2503-f42d-4b77-aac4-b2f9121abb2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f24cf98ac40>]}
+2022-12-06 20:22:20.522836 (MainThread): 20:22:20  Concurrency: 4 threads (target='default')
+2022-12-06 20:22:20.522979 (MainThread): 20:22:20  
+2022-12-06 20:22:20.525772 (Thread-1): 20:22:20  Began running node model.acme.util_months
+2022-12-06 20:22:20.526134 (Thread-1): 20:22:20  1 of 4 START sql view model MRR_ANALYSIS.util_months ........................... [RUN]
+2022-12-06 20:22:20.526570 (Thread-1): 20:22:20  Acquiring new snowflake connection "model.acme.util_months"
+2022-12-06 20:22:20.526686 (Thread-1): 20:22:20  Began compiling node model.acme.util_months
+2022-12-06 20:22:20.526806 (Thread-1): 20:22:20  Compiling model.acme.util_months
+2022-12-06 20:22:20.628393 (Thread-1): 20:22:20  Using snowflake connection "model.acme.util_months"
+2022-12-06 20:22:20.628537 (Thread-1): 20:22:20  On model.acme.util_months: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "model.acme.util_months"} */
+select 
+
+    datediff(
+        month,
+        '2018-01-01',
+        date_trunc('month', current_date)
+        )
+2022-12-06 20:22:20.628624 (Thread-1): 20:22:20  Opening a new connection, currently in state closed
+2022-12-06 20:22:21.092189 (Thread-1): 20:22:21  SQL status: SUCCESS 1 in 0.46 seconds
+2022-12-06 20:22:21.105896 (Thread-1): 20:22:21  Writing injected SQL for node "model.acme.util_months"
+2022-12-06 20:22:21.133827 (Thread-1): 20:22:21  finished collecting timing info
+2022-12-06 20:22:21.134063 (Thread-1): 20:22:21  Began executing node model.acme.util_months
+2022-12-06 20:22:21.162274 (Thread-1): 20:22:21  Writing runtime sql for node "model.acme.util_months"
+2022-12-06 20:22:21.181743 (Thread-1): 20:22:21  Using snowflake connection "model.acme.util_months"
+2022-12-06 20:22:21.181907 (Thread-1): 20:22:21  On model.acme.util_months: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "model.acme.util_months"} */
+create or replace  view MRR_ANALYSIS.MRR_ANALYSIS.util_months
+  
+   as (
+    
+
+/*
+call as follows:
+
+date_spine(
+    "day",
+    "to_date('01/01/2016', 'mm/dd/yyyy')",
+    "dateadd(week, 1, current_date)"
+)
+
+*/
+
+with rawdata as (
+
+    
+
+    
+
+    with p as (
+        select 0 as generated_number union all select 1
+    ), unioned as (
+
+    select
+
+    
+    p0.generated_number * power(2, 0)
+     + 
+    
+    p1.generated_number * power(2, 1)
+     + 
+    
+    p2.generated_number * power(2, 2)
+     + 
+    
+    p3.generated_number * power(2, 3)
+     + 
+    
+    p4.generated_number * power(2, 4)
+     + 
+    
+    p5.generated_number * power(2, 5)
+    
+    
+    + 1
+    as generated_number
+
+    from
+
+    
+    p as p0
+     cross join 
+    
+    p as p1
+     cross join 
+    
+    p as p2
+     cross join 
+    
+    p as p3
+     cross join 
+    
+    p as p4
+     cross join 
+    
+    p as p5
+    
+    
+
+    )
+
+    select *
+    from unioned
+    where generated_number <= 59
+    order by generated_number
+
+
+
+),
+
+all_periods as (
+
+    select (
+        
+
+    dateadd(
+        month,
+        row_number() over (order by 1) - 1,
+        '2018-01-01'
+        )
+
+
+    ) as date_month
+    from rawdata
+
+),
+
+filtered as (
+
+    select *
+    from all_periods
+    where date_month <= date_trunc('month', current_date)
+
+)
+
+select * from filtered
+
+
+  );
+2022-12-06 20:22:21.246582 (Thread-81): handling poll request
+2022-12-06 20:22:21.247022 (Thread-81): 20:22:21  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bac99a0>]}
+2022-12-06 20:22:21.247802 (Thread-81): sending response (<Response 11390 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:21.307555 (Thread-1): 20:22:21  SQL status: SUCCESS 1 in 0.13 seconds
+2022-12-06 20:22:21.324167 (Thread-1): 20:22:21  finished collecting timing info
+2022-12-06 20:22:21.324371 (Thread-1): 20:22:21  On model.acme.util_months: Close
+2022-12-06 20:22:21.387808 (Thread-1): 20:22:21  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3cfc2503-f42d-4b77-aac4-b2f9121abb2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f24cf137190>]}
+2022-12-06 20:22:21.388276 (Thread-1): 20:22:21  1 of 4 OK created sql view model MRR_ANALYSIS.util_months ...................... [SUCCESS 1 in 0.86s]
+2022-12-06 20:22:21.388558 (Thread-1): 20:22:21  Finished running node model.acme.util_months
+2022-12-06 20:22:21.389770 (Thread-3): 20:22:21  Began running node model.acme.customer_revenue_by_month
+2022-12-06 20:22:21.390089 (Thread-3): 20:22:21  2 of 4 START sql view model MRR_ANALYSIS.customer_revenue_by_month ............. [RUN]
+2022-12-06 20:22:21.390551 (Thread-3): 20:22:21  Acquiring new snowflake connection "model.acme.customer_revenue_by_month"
+2022-12-06 20:22:21.390654 (Thread-3): 20:22:21  Began compiling node model.acme.customer_revenue_by_month
+2022-12-06 20:22:21.390746 (Thread-3): 20:22:21  Compiling model.acme.customer_revenue_by_month
+2022-12-06 20:22:21.394620 (Thread-3): 20:22:21  Writing injected SQL for node "model.acme.customer_revenue_by_month"
+2022-12-06 20:22:21.403834 (Thread-3): 20:22:21  finished collecting timing info
+2022-12-06 20:22:21.404040 (Thread-3): 20:22:21  Began executing node model.acme.customer_revenue_by_month
+2022-12-06 20:22:21.407188 (Thread-3): 20:22:21  Writing runtime sql for node "model.acme.customer_revenue_by_month"
+2022-12-06 20:22:21.417812 (Thread-3): 20:22:21  Using snowflake connection "model.acme.customer_revenue_by_month"
+2022-12-06 20:22:21.417932 (Thread-3): 20:22:21  On model.acme.customer_revenue_by_month: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "model.acme.customer_revenue_by_month"} */
+create or replace  view MRR_ANALYSIS.MRR_ANALYSIS.customer_revenue_by_month
+  
+   as (
+    with subscription_periods as (
+
+    select * from MRR_ANALYSIS.MRR_ANALYSIS.subscription_periods
+
+),
+
+months as (
+
+    select * from MRR_ANALYSIS.MRR_ANALYSIS.util_months
+
+),
+
+-- determine when a given account had its first and last (or most recent) month
+customers as (
+
+    select
+        customer_id,
+        date_trunc('month', min(start_date)) as date_month_start,
+        date_trunc('month', max(end_date)) as date_month_end
+
+    from subscription_periods
+
+    group by 1
+
+),
+
+-- create one record per month between a customer's first and last month
+-- (example of a date spine)
+customer_months as (
+
+    select
+        customers.customer_id,
+        months.date_month
+
+    from customers
+
+    inner join months
+        -- all months after start date
+        on  months.date_month >= customers.date_month_start
+        -- and before end date
+        and months.date_month < customers.date_month_end
+
+),
+
+-- join the account-month spine to MRR base model, pulling through most recent dates
+-- and plan info for month rows that have no invoices (i.e. churns)
+joined as (
+
+    select
+        customer_months.date_month,
+        customer_months.customer_id,
+        coalesce(subscription_periods.monthly_amount, 0) as mrr
+
+    from customer_months
+
+    left join subscription_periods
+        on customer_months.customer_id = subscription_periods.customer_id
+        -- month is after a subscription start date
+        and customer_months.date_month >= subscription_periods.start_date
+        -- month is before a subscription end date (and handle null case)
+        and (customer_months.date_month < subscription_periods.end_date
+                or subscription_periods.end_date is null)
+
+),
+
+final as (
+
+    select
+        date_month,
+        customer_id,
+        mrr,
+
+        mrr > 0 as is_active,
+
+        -- calculate first and last months
+        min(case when is_active then date_month end) over (
+            partition by customer_id
+        ) as first_active_month,
+
+        max(case when is_active then date_month end) over (
+            partition by customer_id
+        ) as last_active_month,
+
+        -- calculate if this record is the first or last month
+        first_active_month = date_month as is_first_month,
+        last_active_month = date_month as is_last_month
+
+    from joined
+
+)
+
+select * from final
+  );
+2022-12-06 20:22:21.418019 (Thread-3): 20:22:21  Opening a new connection, currently in state init
+2022-12-06 20:22:21.836945 (Thread-3): 20:22:21  SQL status: SUCCESS 1 in 0.42 seconds
+2022-12-06 20:22:21.838730 (Thread-3): 20:22:21  finished collecting timing info
+2022-12-06 20:22:21.838898 (Thread-3): 20:22:21  On model.acme.customer_revenue_by_month: Close
+2022-12-06 20:22:21.894928 (Thread-3): 20:22:21  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3cfc2503-f42d-4b77-aac4-b2f9121abb2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f24cfb5ffd0>]}
+2022-12-06 20:22:21.895353 (Thread-3): 20:22:21  2 of 4 OK created sql view model MRR_ANALYSIS.customer_revenue_by_month ........ [SUCCESS 1 in 0.50s]
+2022-12-06 20:22:21.895590 (Thread-3): 20:22:21  Finished running node model.acme.customer_revenue_by_month
+2022-12-06 20:22:21.896493 (Thread-2): 20:22:21  Began running node model.acme.customer_churn_month
+2022-12-06 20:22:21.896770 (Thread-2): 20:22:21  3 of 4 START sql view model MRR_ANALYSIS.customer_churn_month .................. [RUN]
+2022-12-06 20:22:21.897268 (Thread-2): 20:22:21  Acquiring new snowflake connection "model.acme.customer_churn_month"
+2022-12-06 20:22:21.897376 (Thread-2): 20:22:21  Began compiling node model.acme.customer_churn_month
+2022-12-06 20:22:21.897470 (Thread-2): 20:22:21  Compiling model.acme.customer_churn_month
+2022-12-06 20:22:21.902362 (Thread-2): 20:22:21  Writing injected SQL for node "model.acme.customer_churn_month"
+2022-12-06 20:22:21.911339 (Thread-2): 20:22:21  finished collecting timing info
+2022-12-06 20:22:21.911500 (Thread-2): 20:22:21  Began executing node model.acme.customer_churn_month
+2022-12-06 20:22:21.914444 (Thread-2): 20:22:21  Writing runtime sql for node "model.acme.customer_churn_month"
+2022-12-06 20:22:21.923546 (Thread-2): 20:22:21  Using snowflake connection "model.acme.customer_churn_month"
+2022-12-06 20:22:21.923666 (Thread-2): 20:22:21  On model.acme.customer_churn_month: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "model.acme.customer_churn_month"} */
+create or replace  view MRR_ANALYSIS.MRR_ANALYSIS.customer_churn_month
+  
+   as (
+    with mrr as (
+
+    select * from MRR_ANALYSIS.MRR_ANALYSIS.customer_revenue_by_month
+
+),
+
+-- row for month *after* last month of activity
+joined as (
+
+    select
+        dateadd(month, 1, date_month)::date as date_month,
+        customer_id,
+        0::float as mrr,
+        false as is_active,
+        first_active_month,
+        last_active_month,
+        false as is_first_month,
+        false as is_last_month
+
+    from mrr
+
+    where is_last_month
+
+)
+
+select * from joined
+  );
+2022-12-06 20:22:21.923754 (Thread-2): 20:22:21  Opening a new connection, currently in state init
+2022-12-06 20:22:22.195573 (Thread-82): handling ps request
+2022-12-06 20:22:22.196003 (Thread-82): 20:22:22  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279ba7a1c0>]}
+2022-12-06 20:22:22.196668 (Thread-82): sending response (<Response 2474 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:22.348854 (Thread-2): 20:22:22  SQL status: SUCCESS 1 in 0.43 seconds
+2022-12-06 20:22:22.350633 (Thread-2): 20:22:22  finished collecting timing info
+2022-12-06 20:22:22.350810 (Thread-2): 20:22:22  On model.acme.customer_churn_month: Close
+2022-12-06 20:22:22.406274 (Thread-2): 20:22:22  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3cfc2503-f42d-4b77-aac4-b2f9121abb2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f252e7a7130>]}
+2022-12-06 20:22:22.406709 (Thread-2): 20:22:22  3 of 4 OK created sql view model MRR_ANALYSIS.customer_churn_month ............. [SUCCESS 1 in 0.51s]
+2022-12-06 20:22:22.406957 (Thread-2): 20:22:22  Finished running node model.acme.customer_churn_month
+2022-12-06 20:22:22.407900 (Thread-4): 20:22:22  Began running node model.acme.mrr
+2022-12-06 20:22:22.408169 (Thread-4): 20:22:22  4 of 4 START sql view model MRR_ANALYSIS.mrr ................................... [RUN]
+2022-12-06 20:22:22.408611 (Thread-4): 20:22:22  Acquiring new snowflake connection "model.acme.mrr"
+2022-12-06 20:22:22.408742 (Thread-4): 20:22:22  Began compiling node model.acme.mrr
+2022-12-06 20:22:22.408846 (Thread-4): 20:22:22  Compiling model.acme.mrr
+2022-12-06 20:22:22.420579 (Thread-4): 20:22:22  
+Warning: the `surrogate_key` macro now takes a single list argument instead of multiple string arguments. Support for multiple string arguments will be deprecated in a future release of dbt-utils. The acme.mrr model triggered this warning. 
+2022-12-06 20:22:22.428413 (Thread-4): 20:22:22  Writing injected SQL for node "model.acme.mrr"
+2022-12-06 20:22:22.440595 (Thread-4): 20:22:22  finished collecting timing info
+2022-12-06 20:22:22.440820 (Thread-4): 20:22:22  Began executing node model.acme.mrr
+2022-12-06 20:22:22.443984 (Thread-4): 20:22:22  Writing runtime sql for node "model.acme.mrr"
+2022-12-06 20:22:22.454417 (Thread-4): 20:22:22  Using snowflake connection "model.acme.mrr"
+2022-12-06 20:22:22.454560 (Thread-4): 20:22:22  On model.acme.mrr: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "model.acme.mrr"} */
+create or replace  view MRR_ANALYSIS.MRR_ANALYSIS.mrr
+  
+   as (
+    with unioned as (
+
+    select * from MRR_ANALYSIS.MRR_ANALYSIS.customer_revenue_by_month
+
+    union all
+
+    select * from MRR_ANALYSIS.MRR_ANALYSIS.customer_churn_month
+
+),
+
+-- get prior month MRR and calculate MRR change
+mrr_with_changes as (
+
+    select
+        *,
+
+        coalesce(
+            lag(is_active) over (partition by customer_id order by date_month),
+            false
+        ) as previous_month_is_active,
+
+        coalesce(
+            lag(mrr) over (partition by customer_id order by date_month),
+            0
+        ) as previous_month_mrr,
+
+        mrr - previous_month_mrr as mrr_change
+
+    from unioned
+
+),
+
+-- classify months as new, churn, reactivation, upgrade, downgrade (or null)
+-- also add an ID column
+final as (
+
+    select
+        md5(cast(coalesce(cast(date_month as 
+    varchar
+), '') || '-' || coalesce(cast(customer_id as 
+    varchar
+), '') as 
+    varchar
+)) as id,
+
+        *,
+
+        case
+            when is_first_month
+                then 'new'
+            when not(is_active) and previous_month_is_active
+                then 'churn'
+            when is_active and not(previous_month_is_active)
+                then 'reactivation'
+            when mrr_change > 0 then 'upgrade'
+            when mrr_change < 0 then 'downgrade'
+        end as change_category,
+
+        least(mrr, previous_month_mrr) as renewal_amount
+
+    from mrr_with_changes
+
+)
+
+select * from final
+  );
+2022-12-06 20:22:22.454651 (Thread-4): 20:22:22  Opening a new connection, currently in state init
+2022-12-06 20:22:22.616268 (Thread-83): handling status request
+2022-12-06 20:22:22.616679 (Thread-83): 20:22:22  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279ba7aa60>]}
+2022-12-06 20:22:22.617259 (Thread-83): sending response (<Response 3873 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:22.667725 (Thread-84): handling poll request
+2022-12-06 20:22:22.668105 (Thread-84): 20:22:22  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279ba7abe0>]}
+2022-12-06 20:22:22.669393 (Thread-84): sending response (<Response 27411 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:23.325362 (Thread-4): 20:22:23  SQL status: SUCCESS 1 in 0.87 seconds
+2022-12-06 20:22:23.327071 (Thread-4): 20:22:23  finished collecting timing info
+2022-12-06 20:22:23.327230 (Thread-4): 20:22:23  On model.acme.mrr: Close
+2022-12-06 20:22:23.401912 (Thread-4): 20:22:23  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3cfc2503-f42d-4b77-aac4-b2f9121abb2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f252deb9df0>]}
+2022-12-06 20:22:23.402331 (Thread-4): 20:22:23  4 of 4 OK created sql view model MRR_ANALYSIS.mrr .............................. [SUCCESS 1 in 0.99s]
+2022-12-06 20:22:23.402622 (Thread-4): 20:22:23  Finished running node model.acme.mrr
+2022-12-06 20:22:23.404380 (MainThread): 20:22:23  Acquiring new snowflake connection "master"
+2022-12-06 20:22:23.404908 (MainThread): 20:22:23  
+2022-12-06 20:22:23.405023 (MainThread): 20:22:23  Finished running 4 view models in 0 hours 0 minutes and 3.82 seconds (3.82s).
+2022-12-06 20:22:23.405119 (MainThread): 20:22:23  Connection 'master' was properly closed.
+2022-12-06 20:22:23.405219 (MainThread): 20:22:23  Connection 'model.acme.util_months' was properly closed.
+2022-12-06 20:22:23.405284 (MainThread): 20:22:23  Connection 'model.acme.customer_revenue_by_month' was properly closed.
+2022-12-06 20:22:23.405347 (MainThread): 20:22:23  Connection 'model.acme.customer_churn_month' was properly closed.
+2022-12-06 20:22:23.405408 (MainThread): 20:22:23  Connection 'model.acme.mrr' was properly closed.
+2022-12-06 20:22:23.472897 (MainThread): 20:22:23  
+2022-12-06 20:22:23.473107 (MainThread): 20:22:23  Completed successfully
+2022-12-06 20:22:23.473239 (MainThread): 20:22:23  
+2022-12-06 20:22:23.473333 (MainThread): 20:22:23  Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+2022-12-06 20:22:24.067033 (Thread-85): handling poll request
+2022-12-06 20:22:24.067463 (Thread-85): 20:22:24  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279ba87610>]}
+2022-12-06 20:22:24.068935 (Thread-85): sending response (<Response 28801 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:24.445599 (Thread-86): handling status request
+2022-12-06 20:22:24.446026 (Thread-86): 20:22:24  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279ba87790>]}
+2022-12-06 20:22:24.446575 (Thread-86): sending response (<Response 3856 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:24.453194 (Thread-87): handling list request
+2022-12-06 20:22:24.453543 (Thread-87): 20:22:24  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279ba87880>]}
+2022-12-06 20:22:24.486810 (Thread-87): 20:22:24  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279ba87d90>]}
+2022-12-06 20:22:24.487435 (Thread-87): 20:22:24  Found 4 models, 21 tests, 0 snapshots, 0 analyses, 491 macros, 0 operations, 1 seed file, 0 sources, 0 exposures, 0 metrics
+2022-12-06 20:22:24.487780 (Thread-87): 20:22:24  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bb1f7f0>]}
+2022-12-06 20:22:24.513449 (Thread-87): 20:22:24  The selection criterion '+dbt_project.yml+' does not match any nodes
+2022-12-06 20:22:24.513675 (Thread-87): 20:22:24  No nodes selected!
+2022-12-06 20:22:24.515336 (Thread-87): sending response (<Response 2532 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:24.614924 (Thread-88): handling ps request
+2022-12-06 20:22:24.615330 (Thread-88): 20:22:24  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bade520>]}
+2022-12-06 20:22:24.616019 (Thread-88): sending response (<Response 2791 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:25.022107 (Thread-89): handling status request
+2022-12-06 20:22:25.022508 (Thread-89): 20:22:25  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bac5a60>]}
+2022-12-06 20:22:25.023031 (Thread-89): sending response (<Response 3873 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:25.035339 (Thread-90): handling poll request
+2022-12-06 20:22:25.035651 (Thread-90): 20:22:25  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bac52b0>]}
+2022-12-06 20:22:25.036261 (Thread-90): sending response (<Response 5306 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:25.573660 (Thread-91): handling status request
+2022-12-06 20:22:25.574062 (Thread-91): 20:22:25  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bac5220>]}
+2022-12-06 20:22:25.574600 (Thread-91): sending response (<Response 3856 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:25.579251 (Thread-92): handling list request
+2022-12-06 20:22:25.579549 (Thread-92): 20:22:25  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bac5160>]}
+2022-12-06 20:22:25.608726 (Thread-92): 20:22:25  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bac5700>]}
+2022-12-06 20:22:25.609387 (Thread-92): 20:22:25  Found 4 models, 21 tests, 0 snapshots, 0 analyses, 491 macros, 0 operations, 1 seed file, 0 sources, 0 exposures, 0 metrics
+2022-12-06 20:22:25.609699 (Thread-92): 20:22:25  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279ba87550>]}
+2022-12-06 20:22:25.610245 (Thread-92): 20:22:25  The selection criterion '+dbt_project.yml+' does not match any nodes
+2022-12-06 20:22:25.610389 (Thread-92): 20:22:25  No nodes selected!
+2022-12-06 20:22:25.611986 (Thread-92): sending response (<Response 2532 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:32.023766 (Thread-93): handling cli_args request
+2022-12-06 20:22:32.024179 (Thread-93): 20:22:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bac9850>]}
+2022-12-06 20:22:34.720450 (Thread-93): sending response (<Response 133 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:34.962533 (MainThread): 20:22:34  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2022-12-06 20:22:34.962963 (MainThread): 20:22:34  Partial parsing enabled, no changes found, skipping parsing
+2022-12-06 20:22:34.970413 (MainThread): 20:22:34  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e6386eed-51d4-4c80-8579-47288c1d6019', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4990bb1e50>]}
+2022-12-06 20:22:34.997329 (MainThread): 20:22:34  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e6386eed-51d4-4c80-8579-47288c1d6019', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4990c4c790>]}
+2022-12-06 20:22:34.997788 (MainThread): 20:22:34  Found 4 models, 21 tests, 0 snapshots, 0 analyses, 491 macros, 0 operations, 1 seed file, 0 sources, 0 exposures, 0 metrics
+2022-12-06 20:22:34.997917 (MainThread): 20:22:34  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e6386eed-51d4-4c80-8579-47288c1d6019', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4990c4c820>]}
+2022-12-06 20:22:35.000122 (MainThread): 20:22:35  
+2022-12-06 20:22:35.000596 (MainThread): 20:22:35  Acquiring new snowflake connection "master"
+2022-12-06 20:22:35.001937 (ThreadPoolExecutor-1_0): 20:22:35  Acquiring new snowflake connection "list_MRR_ANALYSIS_MRR_ANALYSIS"
+2022-12-06 20:22:35.016368 (ThreadPoolExecutor-1_0): 20:22:35  Using snowflake connection "list_MRR_ANALYSIS_MRR_ANALYSIS"
+2022-12-06 20:22:35.016486 (ThreadPoolExecutor-1_0): 20:22:35  On list_MRR_ANALYSIS_MRR_ANALYSIS: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "connection_name": "list_MRR_ANALYSIS_MRR_ANALYSIS"} */
+show terse objects in MRR_ANALYSIS.MRR_ANALYSIS
+2022-12-06 20:22:35.016573 (ThreadPoolExecutor-1_0): 20:22:35  Opening a new connection, currently in state init
+2022-12-06 20:22:35.228582 (Thread-94): handling ps request
+2022-12-06 20:22:35.229073 (Thread-94): 20:22:35  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bad9e80>]}
+2022-12-06 20:22:35.230206 (Thread-94): sending response (<Response 3479 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:35.304461 (Thread-95): handling poll request
+2022-12-06 20:22:35.304922 (Thread-95): 20:22:35  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279ba9b250>]}
+2022-12-06 20:22:35.305607 (Thread-95): sending response (<Response 4757 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:35.357915 (Thread-96): handling status request
+2022-12-06 20:22:35.358324 (Thread-96): 20:22:35  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bac60d0>]}
+2022-12-06 20:22:35.358929 (Thread-96): sending response (<Response 3873 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:35.510656 (Thread-97): handling ps request
+2022-12-06 20:22:35.511123 (Thread-97): 20:22:35  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bac9160>]}
+2022-12-06 20:22:35.511858 (Thread-97): sending response (<Response 3480 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:35.564745 (ThreadPoolExecutor-1_0): 20:22:35  SQL status: SUCCESS 5 in 0.55 seconds
+2022-12-06 20:22:35.567169 (ThreadPoolExecutor-1_0): 20:22:35  On list_MRR_ANALYSIS_MRR_ANALYSIS: Close
+2022-12-06 20:22:35.626809 (MainThread): 20:22:35  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e6386eed-51d4-4c80-8579-47288c1d6019', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4990d53e50>]}
+2022-12-06 20:22:35.627748 (MainThread): 20:22:35  Concurrency: 4 threads (target='default')
+2022-12-06 20:22:35.627896 (MainThread): 20:22:35  
+2022-12-06 20:22:35.631208 (Thread-1): 20:22:35  Began running node test.acme.dbt_utils_expression_is_true_mrr_date_month_date_trunc_month_current_date_.8e3ee48bc6
+2022-12-06 20:22:35.631407 (Thread-1): 20:22:35  1 of 21 START test dbt_utils_expression_is_true_mrr_date_month_date_trunc_month_current_date_  [RUN]
+2022-12-06 20:22:35.631832 (Thread-1): 20:22:35  Acquiring new snowflake connection "test.acme.dbt_utils_expression_is_true_mrr_date_month_date_trunc_month_current_date_.8e3ee48bc6"
+2022-12-06 20:22:35.631946 (Thread-1): 20:22:35  Began compiling node test.acme.dbt_utils_expression_is_true_mrr_date_month_date_trunc_month_current_date_.8e3ee48bc6
+2022-12-06 20:22:35.632073 (Thread-1): 20:22:35  Compiling test.acme.dbt_utils_expression_is_true_mrr_date_month_date_trunc_month_current_date_.8e3ee48bc6
+2022-12-06 20:22:35.636247 (Thread-2): 20:22:35  Began running node test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_end_date_end_date.5f773b4670
+2022-12-06 20:22:35.636409 (Thread-2): 20:22:35  2 of 21 START test dbt_utils_expression_is_true_subscription_periods_date_trunc_month_end_date_end_date  [RUN]
+2022-12-06 20:22:35.636827 (Thread-2): 20:22:35  Acquiring new snowflake connection "test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_end_date_end_date.5f773b4670"
+2022-12-06 20:22:35.636924 (Thread-2): 20:22:35  Began compiling node test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_end_date_end_date.5f773b4670
+2022-12-06 20:22:35.637007 (Thread-2): 20:22:35  Compiling test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_end_date_end_date.5f773b4670
+2022-12-06 20:22:35.730133 (Thread-2): 20:22:35  Writing injected SQL for node "test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_end_date_end_date.5f773b4670"
+2022-12-06 20:22:35.730467 (Thread-3): 20:22:35  Began running node test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_start_date_start_date.abd2cf4dfd
+2022-12-06 20:22:35.730646 (Thread-3): 20:22:35  3 of 21 START test dbt_utils_expression_is_true_subscription_periods_date_trunc_month_start_date_start_date  [RUN]
+2022-12-06 20:22:35.731090 (Thread-3): 20:22:35  Acquiring new snowflake connection "test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_start_date_start_date.abd2cf4dfd"
+2022-12-06 20:22:35.731189 (Thread-3): 20:22:35  Began compiling node test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_start_date_start_date.abd2cf4dfd
+2022-12-06 20:22:35.731276 (Thread-3): 20:22:35  Compiling test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_start_date_start_date.abd2cf4dfd
+2022-12-06 20:22:35.737942 (Thread-1): 20:22:35  Writing injected SQL for node "test.acme.dbt_utils_expression_is_true_mrr_date_month_date_trunc_month_current_date_.8e3ee48bc6"
+2022-12-06 20:22:35.738336 (Thread-4): 20:22:35  Began running node test.acme.dbt_utils_mutually_exclusive_ranges_subscription_periods_start_date__customer_id__end_date.a4c8bc64fa
+2022-12-06 20:22:35.738514 (Thread-4): 20:22:35  4 of 21 START test dbt_utils_mutually_exclusive_ranges_subscription_periods_start_date__customer_id__end_date  [RUN]
+2022-12-06 20:22:35.738941 (Thread-4): 20:22:35  Acquiring new snowflake connection "test.acme.dbt_utils_mutually_exclusive_ranges_subscription_periods_start_date__customer_id__end_date.a4c8bc64fa"
+2022-12-06 20:22:35.739041 (Thread-4): 20:22:35  Began compiling node test.acme.dbt_utils_mutually_exclusive_ranges_subscription_periods_start_date__customer_id__end_date.a4c8bc64fa
+2022-12-06 20:22:35.739127 (Thread-4): 20:22:35  Compiling test.acme.dbt_utils_mutually_exclusive_ranges_subscription_periods_start_date__customer_id__end_date.a4c8bc64fa
+2022-12-06 20:22:35.744421 (Thread-3): 20:22:35  Writing injected SQL for node "test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_start_date_start_date.abd2cf4dfd"
+2022-12-06 20:22:35.756018 (Thread-4): 20:22:35  Writing injected SQL for node "test.acme.dbt_utils_mutually_exclusive_ranges_subscription_periods_start_date__customer_id__end_date.a4c8bc64fa"
+2022-12-06 20:22:35.761944 (Thread-2): 20:22:35  finished collecting timing info
+2022-12-06 20:22:35.762132 (Thread-2): 20:22:35  Began executing node test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_end_date_end_date.5f773b4670
+2022-12-06 20:22:35.767330 (Thread-3): 20:22:35  finished collecting timing info
+2022-12-06 20:22:35.767491 (Thread-3): 20:22:35  Began executing node test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_start_date_start_date.abd2cf4dfd
+2022-12-06 20:22:35.777526 (Thread-1): 20:22:35  finished collecting timing info
+2022-12-06 20:22:35.777693 (Thread-1): 20:22:35  Began executing node test.acme.dbt_utils_expression_is_true_mrr_date_month_date_trunc_month_current_date_.8e3ee48bc6
+2022-12-06 20:22:35.804226 (Thread-1): 20:22:35  Writing runtime sql for node "test.acme.dbt_utils_expression_is_true_mrr_date_month_date_trunc_month_current_date_.8e3ee48bc6"
+2022-12-06 20:22:35.811768 (Thread-3): 20:22:35  Writing runtime sql for node "test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_start_date_start_date.abd2cf4dfd"
+2022-12-06 20:22:35.812438 (Thread-2): 20:22:35  Writing runtime sql for node "test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_end_date_end_date.5f773b4670"
+2022-12-06 20:22:35.814295 (Thread-4): 20:22:35  finished collecting timing info
+2022-12-06 20:22:35.814470 (Thread-4): 20:22:35  Began executing node test.acme.dbt_utils_mutually_exclusive_ranges_subscription_periods_start_date__customer_id__end_date.a4c8bc64fa
+2022-12-06 20:22:35.817130 (Thread-4): 20:22:35  Writing runtime sql for node "test.acme.dbt_utils_mutually_exclusive_ranges_subscription_periods_start_date__customer_id__end_date.a4c8bc64fa"
+2022-12-06 20:22:35.827166 (Thread-1): 20:22:35  Using snowflake connection "test.acme.dbt_utils_expression_is_true_mrr_date_month_date_trunc_month_current_date_.8e3ee48bc6"
+2022-12-06 20:22:35.827350 (Thread-1): 20:22:35  On test.acme.dbt_utils_expression_is_true_mrr_date_month_date_trunc_month_current_date_.8e3ee48bc6: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "test.acme.dbt_utils_expression_is_true_mrr_date_month_date_trunc_month_current_date_.8e3ee48bc6"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+
+with meet_condition as (
+    select * from MRR_ANALYSIS.MRR_ANALYSIS.mrr where 1=1
+)
+
+select
+    *
+from meet_condition
+
+where not(date_month <= date_trunc('month', current_date))
+
+
+      
+    ) dbt_internal_test
+2022-12-06 20:22:35.827445 (Thread-1): 20:22:35  Opening a new connection, currently in state closed
+2022-12-06 20:22:35.830064 (Thread-3): 20:22:35  Using snowflake connection "test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_start_date_start_date.abd2cf4dfd"
+2022-12-06 20:22:35.830189 (Thread-3): 20:22:35  On test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_start_date_start_date.abd2cf4dfd: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_start_date_start_date.abd2cf4dfd"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+
+with meet_condition as (
+    select * from MRR_ANALYSIS.MRR_ANALYSIS.subscription_periods where 1=1
+)
+
+select
+    *
+from meet_condition
+
+where not(date_trunc('month', start_date) = start_date)
+
+
+      
+    ) dbt_internal_test
+2022-12-06 20:22:35.830270 (Thread-3): 20:22:35  Opening a new connection, currently in state init
+2022-12-06 20:22:35.835650 (Thread-2): 20:22:35  Using snowflake connection "test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_end_date_end_date.5f773b4670"
+2022-12-06 20:22:35.835771 (Thread-2): 20:22:35  On test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_end_date_end_date.5f773b4670: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_end_date_end_date.5f773b4670"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+
+with meet_condition as (
+    select * from MRR_ANALYSIS.MRR_ANALYSIS.subscription_periods where 1=1
+)
+
+select
+    *
+from meet_condition
+
+where not(date_trunc('month', end_date) = end_date)
+
+
+      
+    ) dbt_internal_test
+2022-12-06 20:22:35.835851 (Thread-2): 20:22:35  Opening a new connection, currently in state init
+2022-12-06 20:22:35.839370 (Thread-4): 20:22:35  Using snowflake connection "test.acme.dbt_utils_mutually_exclusive_ranges_subscription_periods_start_date__customer_id__end_date.a4c8bc64fa"
+2022-12-06 20:22:35.839477 (Thread-4): 20:22:35  On test.acme.dbt_utils_mutually_exclusive_ranges_subscription_periods_start_date__customer_id__end_date.a4c8bc64fa: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "test.acme.dbt_utils_mutually_exclusive_ranges_subscription_periods_start_date__customer_id__end_date.a4c8bc64fa"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+
+    
+    
+
+
+    
+    
+
+
+
+
+with window_functions as (
+
+    select
+        
+        customer_id as partition_by_col,
+        
+        start_date as lower_bound,
+        end_date as upper_bound,
+
+        lead(start_date) over (
+            partition by customer_id
+            order by start_date
+        ) as next_lower_bound,
+
+        row_number() over (
+            partition by customer_id
+            order by start_date desc
+        ) = 1 as is_last_record
+
+    from MRR_ANALYSIS.MRR_ANALYSIS.subscription_periods
+
+),
+
+calc as (
+    -- We want to return records where one of our assumptions fails, so we'll use
+    -- the `not` function with `and` statements so we can write our assumptions nore cleanly
+    select
+        *,
+
+        -- For each record: lower_bound should be < upper_bound.
+        -- Coalesce it to return an error on the null case (implicit assumption
+        -- these columns are not_null)
+        coalesce(
+            lower_bound < upper_bound,
+            false
+        ) as lower_bound_less_than_upper_bound,
+
+        -- For each record: upper_bound <= the next lower_bound.
+        -- Coalesce it to handle null cases for the last record.
+        coalesce(
+            upper_bound <= next_lower_bound,
+            is_last_record,
+            false
+        ) as upper_bound_less_than_or_equal_to_next_lower_bound
+
+    from window_functions
+
+),
+
+validation_errors as (
+
+    select
+        *
+    from calc
+
+    where not(
+        -- THE FOLLOWING SHOULD BE TRUE --
+        lower_bound_less_than_upper_bound
+        and upper_bound_less_than_or_equal_to_next_lower_bound
+    )
+)
+
+select * from validation_errors
+
+      
+    ) dbt_internal_test
+2022-12-06 20:22:35.839555 (Thread-4): 20:22:35  Opening a new connection, currently in state init
+2022-12-06 20:22:36.745925 (Thread-98): handling poll request
+2022-12-06 20:22:36.746308 (Thread-98): 20:22:36  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27993e3bb0>]}
+2022-12-06 20:22:36.747371 (Thread-98): sending response (<Response 31546 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:36.846550 (Thread-2): 20:22:36  SQL status: SUCCESS 1 in 1.01 seconds
+2022-12-06 20:22:36.853974 (Thread-2): 20:22:36  finished collecting timing info
+2022-12-06 20:22:36.854150 (Thread-2): 20:22:36  On test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_end_date_end_date.5f773b4670: Close
+2022-12-06 20:22:36.920448 (Thread-2): 20:22:36  2 of 21 PASS dbt_utils_expression_is_true_subscription_periods_date_trunc_month_end_date_end_date  [PASS in 1.28s]
+2022-12-06 20:22:36.920767 (Thread-2): 20:22:36  Finished running node test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_end_date_end_date.5f773b4670
+2022-12-06 20:22:36.920944 (Thread-2): 20:22:36  Began running node test.acme.dbt_utils_unique_combination_of_columns_customer_revenue_by_month_customer_id__date_month.e8886ba716
+2022-12-06 20:22:36.921071 (Thread-2): 20:22:36  5 of 21 START test dbt_utils_unique_combination_of_columns_customer_revenue_by_month_customer_id__date_month  [RUN]
+2022-12-06 20:22:36.921505 (Thread-2): 20:22:36  Acquiring new snowflake connection "test.acme.dbt_utils_unique_combination_of_columns_customer_revenue_by_month_customer_id__date_month.e8886ba716"
+2022-12-06 20:22:36.921609 (Thread-2): 20:22:36  Began compiling node test.acme.dbt_utils_unique_combination_of_columns_customer_revenue_by_month_customer_id__date_month.e8886ba716
+2022-12-06 20:22:36.921700 (Thread-2): 20:22:36  Compiling test.acme.dbt_utils_unique_combination_of_columns_customer_revenue_by_month_customer_id__date_month.e8886ba716
+2022-12-06 20:22:36.932989 (Thread-2): 20:22:36  Writing injected SQL for node "test.acme.dbt_utils_unique_combination_of_columns_customer_revenue_by_month_customer_id__date_month.e8886ba716"
+2022-12-06 20:22:36.941496 (Thread-2): 20:22:36  finished collecting timing info
+2022-12-06 20:22:36.941662 (Thread-2): 20:22:36  Began executing node test.acme.dbt_utils_unique_combination_of_columns_customer_revenue_by_month_customer_id__date_month.e8886ba716
+2022-12-06 20:22:36.944905 (Thread-2): 20:22:36  Writing runtime sql for node "test.acme.dbt_utils_unique_combination_of_columns_customer_revenue_by_month_customer_id__date_month.e8886ba716"
+2022-12-06 20:22:36.953540 (Thread-2): 20:22:36  Using snowflake connection "test.acme.dbt_utils_unique_combination_of_columns_customer_revenue_by_month_customer_id__date_month.e8886ba716"
+2022-12-06 20:22:36.953652 (Thread-2): 20:22:36  On test.acme.dbt_utils_unique_combination_of_columns_customer_revenue_by_month_customer_id__date_month.e8886ba716: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "test.acme.dbt_utils_unique_combination_of_columns_customer_revenue_by_month_customer_id__date_month.e8886ba716"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+
+
+
+
+
+with validation_errors as (
+
+    select
+        customer_id, date_month
+    from MRR_ANALYSIS.MRR_ANALYSIS.customer_revenue_by_month
+    group by customer_id, date_month
+    having count(*) > 1
+
+)
+
+select *
+from validation_errors
+
+
+
+      
+    ) dbt_internal_test
+2022-12-06 20:22:36.953736 (Thread-2): 20:22:36  Opening a new connection, currently in state closed
+2022-12-06 20:22:37.346796 (Thread-3): 20:22:37  SQL status: SUCCESS 1 in 1.52 seconds
+2022-12-06 20:22:37.348913 (Thread-3): 20:22:37  finished collecting timing info
+2022-12-06 20:22:37.349078 (Thread-3): 20:22:37  On test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_start_date_start_date.abd2cf4dfd: Close
+2022-12-06 20:22:37.351894 (Thread-4): 20:22:37  SQL status: SUCCESS 1 in 1.51 seconds
+2022-12-06 20:22:37.353680 (Thread-4): 20:22:37  finished collecting timing info
+2022-12-06 20:22:37.353827 (Thread-4): 20:22:37  On test.acme.dbt_utils_mutually_exclusive_ranges_subscription_periods_start_date__customer_id__end_date.a4c8bc64fa: Close
+2022-12-06 20:22:37.410289 (Thread-3): 20:22:37  3 of 21 PASS dbt_utils_expression_is_true_subscription_periods_date_trunc_month_start_date_start_date  [PASS in 1.68s]
+2022-12-06 20:22:37.410620 (Thread-3): 20:22:37  Finished running node test.acme.dbt_utils_expression_is_true_subscription_periods_date_trunc_month_start_date_start_date.abd2cf4dfd
+2022-12-06 20:22:37.410793 (Thread-3): 20:22:37  Began running node test.acme.dbt_utils_unique_combination_of_columns_mrr_customer_id__date_month.7a5b0199cb
+2022-12-06 20:22:37.410921 (Thread-3): 20:22:37  6 of 21 START test dbt_utils_unique_combination_of_columns_mrr_customer_id__date_month  [RUN]
+2022-12-06 20:22:37.411314 (Thread-3): 20:22:37  Acquiring new snowflake connection "test.acme.dbt_utils_unique_combination_of_columns_mrr_customer_id__date_month.7a5b0199cb"
+2022-12-06 20:22:37.411414 (Thread-3): 20:22:37  Began compiling node test.acme.dbt_utils_unique_combination_of_columns_mrr_customer_id__date_month.7a5b0199cb
+2022-12-06 20:22:37.411501 (Thread-3): 20:22:37  Compiling test.acme.dbt_utils_unique_combination_of_columns_mrr_customer_id__date_month.7a5b0199cb
+2022-12-06 20:22:37.417976 (Thread-3): 20:22:37  Writing injected SQL for node "test.acme.dbt_utils_unique_combination_of_columns_mrr_customer_id__date_month.7a5b0199cb"
+2022-12-06 20:22:37.420212 (Thread-4): 20:22:37  4 of 21 PASS dbt_utils_mutually_exclusive_ranges_subscription_periods_start_date__customer_id__end_date  [PASS in 1.68s]
+2022-12-06 20:22:37.420453 (Thread-4): 20:22:37  Finished running node test.acme.dbt_utils_mutually_exclusive_ranges_subscription_periods_start_date__customer_id__end_date.a4c8bc64fa
+2022-12-06 20:22:37.420600 (Thread-4): 20:22:37  Began running node test.acme.not_null_customer_churn_month_customer_id.99e28f508c
+2022-12-06 20:22:37.420722 (Thread-4): 20:22:37  7 of 21 START test not_null_customer_churn_month_customer_id ................... [RUN]
+2022-12-06 20:22:37.421210 (Thread-4): 20:22:37  Acquiring new snowflake connection "test.acme.not_null_customer_churn_month_customer_id.99e28f508c"
+2022-12-06 20:22:37.421318 (Thread-4): 20:22:37  Began compiling node test.acme.not_null_customer_churn_month_customer_id.99e28f508c
+2022-12-06 20:22:37.421403 (Thread-4): 20:22:37  Compiling test.acme.not_null_customer_churn_month_customer_id.99e28f508c
+2022-12-06 20:22:37.429112 (Thread-4): 20:22:37  Writing injected SQL for node "test.acme.not_null_customer_churn_month_customer_id.99e28f508c"
+2022-12-06 20:22:37.433373 (Thread-3): 20:22:37  finished collecting timing info
+2022-12-06 20:22:37.433537 (Thread-3): 20:22:37  Began executing node test.acme.dbt_utils_unique_combination_of_columns_mrr_customer_id__date_month.7a5b0199cb
+2022-12-06 20:22:37.436026 (Thread-3): 20:22:37  Writing runtime sql for node "test.acme.dbt_utils_unique_combination_of_columns_mrr_customer_id__date_month.7a5b0199cb"
+2022-12-06 20:22:37.447595 (Thread-4): 20:22:37  finished collecting timing info
+2022-12-06 20:22:37.447755 (Thread-4): 20:22:37  Began executing node test.acme.not_null_customer_churn_month_customer_id.99e28f508c
+2022-12-06 20:22:37.450377 (Thread-4): 20:22:37  Writing runtime sql for node "test.acme.not_null_customer_churn_month_customer_id.99e28f508c"
+2022-12-06 20:22:37.451878 (Thread-3): 20:22:37  Using snowflake connection "test.acme.dbt_utils_unique_combination_of_columns_mrr_customer_id__date_month.7a5b0199cb"
+2022-12-06 20:22:37.451996 (Thread-3): 20:22:37  On test.acme.dbt_utils_unique_combination_of_columns_mrr_customer_id__date_month.7a5b0199cb: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "test.acme.dbt_utils_unique_combination_of_columns_mrr_customer_id__date_month.7a5b0199cb"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+
+
+
+
+
+with validation_errors as (
+
+    select
+        customer_id, date_month
+    from MRR_ANALYSIS.MRR_ANALYSIS.mrr
+    group by customer_id, date_month
+    having count(*) > 1
+
+)
+
+select *
+from validation_errors
+
+
+
+      
+    ) dbt_internal_test
+2022-12-06 20:22:37.452085 (Thread-3): 20:22:37  Opening a new connection, currently in state closed
+2022-12-06 20:22:37.459102 (Thread-4): 20:22:37  Using snowflake connection "test.acme.not_null_customer_churn_month_customer_id.99e28f508c"
+2022-12-06 20:22:37.459226 (Thread-4): 20:22:37  On test.acme.not_null_customer_churn_month_customer_id.99e28f508c: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "test.acme.not_null_customer_churn_month_customer_id.99e28f508c"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from MRR_ANALYSIS.MRR_ANALYSIS.customer_churn_month
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+2022-12-06 20:22:37.459307 (Thread-4): 20:22:37  Opening a new connection, currently in state closed
+2022-12-06 20:22:37.627164 (Thread-99): handling ps request
+2022-12-06 20:22:37.627585 (Thread-99): 20:22:37  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279940f0a0>]}
+2022-12-06 20:22:37.628563 (Thread-99): sending response (<Response 3480 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:37.723828 (Thread-2): 20:22:37  SQL status: SUCCESS 1 in 0.77 seconds
+2022-12-06 20:22:37.726381 (Thread-2): 20:22:37  finished collecting timing info
+2022-12-06 20:22:37.726559 (Thread-2): 20:22:37  On test.acme.dbt_utils_unique_combination_of_columns_customer_revenue_by_month_customer_id__date_month.e8886ba716: Close
+2022-12-06 20:22:37.792982 (Thread-2): 20:22:37  5 of 21 PASS dbt_utils_unique_combination_of_columns_customer_revenue_by_month_customer_id__date_month  [PASS in 0.87s]
+2022-12-06 20:22:37.793361 (Thread-2): 20:22:37  Finished running node test.acme.dbt_utils_unique_combination_of_columns_customer_revenue_by_month_customer_id__date_month.e8886ba716
+2022-12-06 20:22:37.793618 (Thread-2): 20:22:37  Began running node test.acme.not_null_mrr_customer_id.adf44c0fb5
+2022-12-06 20:22:37.793771 (Thread-2): 20:22:37  8 of 21 START test not_null_mrr_customer_id .................................... [RUN]
+2022-12-06 20:22:37.794161 (Thread-2): 20:22:37  Acquiring new snowflake connection "test.acme.not_null_mrr_customer_id.adf44c0fb5"
+2022-12-06 20:22:37.794256 (Thread-2): 20:22:37  Began compiling node test.acme.not_null_mrr_customer_id.adf44c0fb5
+2022-12-06 20:22:37.794345 (Thread-2): 20:22:37  Compiling test.acme.not_null_mrr_customer_id.adf44c0fb5
+2022-12-06 20:22:37.799228 (Thread-2): 20:22:37  Writing injected SQL for node "test.acme.not_null_mrr_customer_id.adf44c0fb5"
+2022-12-06 20:22:37.807295 (Thread-2): 20:22:37  finished collecting timing info
+2022-12-06 20:22:37.807484 (Thread-2): 20:22:37  Began executing node test.acme.not_null_mrr_customer_id.adf44c0fb5
+2022-12-06 20:22:37.810294 (Thread-2): 20:22:37  Writing runtime sql for node "test.acme.not_null_mrr_customer_id.adf44c0fb5"
+2022-12-06 20:22:37.818629 (Thread-2): 20:22:37  Using snowflake connection "test.acme.not_null_mrr_customer_id.adf44c0fb5"
+2022-12-06 20:22:37.818772 (Thread-2): 20:22:37  On test.acme.not_null_mrr_customer_id.adf44c0fb5: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "test.acme.not_null_mrr_customer_id.adf44c0fb5"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from MRR_ANALYSIS.MRR_ANALYSIS.mrr
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+2022-12-06 20:22:37.818862 (Thread-2): 20:22:37  Opening a new connection, currently in state closed
+2022-12-06 20:22:38.020971 (Thread-100): handling status request
+2022-12-06 20:22:38.021416 (Thread-100): 20:22:38  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279ba9f370>]}
+2022-12-06 20:22:38.021946 (Thread-100): sending response (<Response 3873 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:38.154836 (Thread-101): handling poll request
+2022-12-06 20:22:38.155274 (Thread-101): 20:22:38  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279ba9f670>]}
+2022-12-06 20:22:38.156498 (Thread-101): sending response (<Response 35723 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:38.233265 (Thread-4): 20:22:38  SQL status: SUCCESS 1 in 0.77 seconds
+2022-12-06 20:22:38.235218 (Thread-4): 20:22:38  finished collecting timing info
+2022-12-06 20:22:38.235385 (Thread-4): 20:22:38  On test.acme.not_null_customer_churn_month_customer_id.99e28f508c: Close
+2022-12-06 20:22:38.256767 (Thread-1): 20:22:38  SQL status: SUCCESS 1 in 2.43 seconds
+2022-12-06 20:22:38.258532 (Thread-1): 20:22:38  finished collecting timing info
+2022-12-06 20:22:38.258683 (Thread-1): 20:22:38  On test.acme.dbt_utils_expression_is_true_mrr_date_month_date_trunc_month_current_date_.8e3ee48bc6: Close
+2022-12-06 20:22:38.291725 (Thread-4): 20:22:38  7 of 21 PASS not_null_customer_churn_month_customer_id ......................... [PASS in 0.87s]
+2022-12-06 20:22:38.292034 (Thread-4): 20:22:38  Finished running node test.acme.not_null_customer_churn_month_customer_id.99e28f508c
+2022-12-06 20:22:38.292194 (Thread-4): 20:22:38  Began running node test.acme.not_null_mrr_date_month.d7121d9ce6
+2022-12-06 20:22:38.292321 (Thread-4): 20:22:38  9 of 21 START test not_null_mrr_date_month ..................................... [RUN]
+2022-12-06 20:22:38.292703 (Thread-4): 20:22:38  Acquiring new snowflake connection "test.acme.not_null_mrr_date_month.d7121d9ce6"
+2022-12-06 20:22:38.292801 (Thread-4): 20:22:38  Began compiling node test.acme.not_null_mrr_date_month.d7121d9ce6
+2022-12-06 20:22:38.292907 (Thread-4): 20:22:38  Compiling test.acme.not_null_mrr_date_month.d7121d9ce6
+2022-12-06 20:22:38.297985 (Thread-4): 20:22:38  Writing injected SQL for node "test.acme.not_null_mrr_date_month.d7121d9ce6"
+2022-12-06 20:22:38.307538 (Thread-4): 20:22:38  finished collecting timing info
+2022-12-06 20:22:38.307709 (Thread-4): 20:22:38  Began executing node test.acme.not_null_mrr_date_month.d7121d9ce6
+2022-12-06 20:22:38.310253 (Thread-4): 20:22:38  Writing runtime sql for node "test.acme.not_null_mrr_date_month.d7121d9ce6"
+2022-12-06 20:22:38.318814 (Thread-4): 20:22:38  Using snowflake connection "test.acme.not_null_mrr_date_month.d7121d9ce6"
+2022-12-06 20:22:38.318934 (Thread-4): 20:22:38  On test.acme.not_null_mrr_date_month.d7121d9ce6: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "test.acme.not_null_mrr_date_month.d7121d9ce6"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select date_month
+from MRR_ANALYSIS.MRR_ANALYSIS.mrr
+where date_month is null
+
+
+
+      
+    ) dbt_internal_test
+2022-12-06 20:22:38.319019 (Thread-4): 20:22:38  Opening a new connection, currently in state closed
+2022-12-06 20:22:38.326820 (Thread-1): 20:22:38  1 of 21 PASS dbt_utils_expression_is_true_mrr_date_month_date_trunc_month_current_date_  [PASS in 2.70s]
+2022-12-06 20:22:38.327082 (Thread-1): 20:22:38  Finished running node test.acme.dbt_utils_expression_is_true_mrr_date_month_date_trunc_month_current_date_.8e3ee48bc6
+2022-12-06 20:22:38.327235 (Thread-1): 20:22:38  Began running node test.acme.not_null_mrr_first_active_month.a9078832e9
+2022-12-06 20:22:38.327356 (Thread-1): 20:22:38  10 of 21 START test not_null_mrr_first_active_month ............................ [RUN]
+2022-12-06 20:22:38.327724 (Thread-1): 20:22:38  Acquiring new snowflake connection "test.acme.not_null_mrr_first_active_month.a9078832e9"
+2022-12-06 20:22:38.327819 (Thread-1): 20:22:38  Began compiling node test.acme.not_null_mrr_first_active_month.a9078832e9
+2022-12-06 20:22:38.327906 (Thread-1): 20:22:38  Compiling test.acme.not_null_mrr_first_active_month.a9078832e9
+2022-12-06 20:22:38.333818 (Thread-1): 20:22:38  Writing injected SQL for node "test.acme.not_null_mrr_first_active_month.a9078832e9"
+2022-12-06 20:22:38.347631 (Thread-1): 20:22:38  finished collecting timing info
+2022-12-06 20:22:38.347830 (Thread-1): 20:22:38  Began executing node test.acme.not_null_mrr_first_active_month.a9078832e9
+2022-12-06 20:22:38.350433 (Thread-1): 20:22:38  Writing runtime sql for node "test.acme.not_null_mrr_first_active_month.a9078832e9"
+2022-12-06 20:22:38.371636 (Thread-1): 20:22:38  Using snowflake connection "test.acme.not_null_mrr_first_active_month.a9078832e9"
+2022-12-06 20:22:38.371769 (Thread-1): 20:22:38  On test.acme.not_null_mrr_first_active_month.a9078832e9: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "test.acme.not_null_mrr_first_active_month.a9078832e9"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select first_active_month
+from MRR_ANALYSIS.MRR_ANALYSIS.mrr
+where first_active_month is null
+
+
+
+      
+    ) dbt_internal_test
+2022-12-06 20:22:38.371854 (Thread-1): 20:22:38  Opening a new connection, currently in state closed
+2022-12-06 20:22:39.277114 (Thread-2): 20:22:39  SQL status: SUCCESS 1 in 1.46 seconds
+2022-12-06 20:22:39.279176 (Thread-2): 20:22:39  finished collecting timing info
+2022-12-06 20:22:39.279353 (Thread-2): 20:22:39  On test.acme.not_null_mrr_customer_id.adf44c0fb5: Close
+2022-12-06 20:22:39.344431 (Thread-2): 20:22:39  8 of 21 PASS not_null_mrr_customer_id .......................................... [PASS in 1.55s]
+2022-12-06 20:22:39.344753 (Thread-2): 20:22:39  Finished running node test.acme.not_null_mrr_customer_id.adf44c0fb5
+2022-12-06 20:22:39.344934 (Thread-2): 20:22:39  Began running node test.acme.not_null_mrr_id.45914052fb
+2022-12-06 20:22:39.345066 (Thread-2): 20:22:39  11 of 21 START test not_null_mrr_id ............................................ [RUN]
+2022-12-06 20:22:39.345500 (Thread-2): 20:22:39  Acquiring new snowflake connection "test.acme.not_null_mrr_id.45914052fb"
+2022-12-06 20:22:39.345602 (Thread-2): 20:22:39  Began compiling node test.acme.not_null_mrr_id.45914052fb
+2022-12-06 20:22:39.345692 (Thread-2): 20:22:39  Compiling test.acme.not_null_mrr_id.45914052fb
+2022-12-06 20:22:39.350356 (Thread-2): 20:22:39  Writing injected SQL for node "test.acme.not_null_mrr_id.45914052fb"
+2022-12-06 20:22:39.358202 (Thread-2): 20:22:39  finished collecting timing info
+2022-12-06 20:22:39.358381 (Thread-2): 20:22:39  Began executing node test.acme.not_null_mrr_id.45914052fb
+2022-12-06 20:22:39.361109 (Thread-2): 20:22:39  Writing runtime sql for node "test.acme.not_null_mrr_id.45914052fb"
+2022-12-06 20:22:39.369320 (Thread-2): 20:22:39  Using snowflake connection "test.acme.not_null_mrr_id.45914052fb"
+2022-12-06 20:22:39.369452 (Thread-2): 20:22:39  On test.acme.not_null_mrr_id.45914052fb: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "test.acme.not_null_mrr_id.45914052fb"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from MRR_ANALYSIS.MRR_ANALYSIS.mrr
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+2022-12-06 20:22:39.369538 (Thread-2): 20:22:39  Opening a new connection, currently in state closed
+2022-12-06 20:22:39.547924 (Thread-102): handling poll request
+2022-12-06 20:22:39.548326 (Thread-102): 20:22:39  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27993a30a0>]}
+2022-12-06 20:22:39.549352 (Thread-102): sending response (<Response 23354 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:39.702832 (Thread-3): 20:22:39  SQL status: SUCCESS 1 in 2.25 seconds
+2022-12-06 20:22:39.705416 (Thread-3): 20:22:39  finished collecting timing info
+2022-12-06 20:22:39.705628 (Thread-3): 20:22:39  On test.acme.dbt_utils_unique_combination_of_columns_mrr_customer_id__date_month.7a5b0199cb: Close
+2022-12-06 20:22:39.775695 (Thread-3): 20:22:39  6 of 21 PASS dbt_utils_unique_combination_of_columns_mrr_customer_id__date_month  [PASS in 2.36s]
+2022-12-06 20:22:39.776000 (Thread-3): 20:22:39  Finished running node test.acme.dbt_utils_unique_combination_of_columns_mrr_customer_id__date_month.7a5b0199cb
+2022-12-06 20:22:39.776160 (Thread-3): 20:22:39  Began running node test.acme.not_null_mrr_is_active.66e2203f7d
+2022-12-06 20:22:39.776283 (Thread-3): 20:22:39  12 of 21 START test not_null_mrr_is_active ..................................... [RUN]
+2022-12-06 20:22:39.776671 (Thread-3): 20:22:39  Acquiring new snowflake connection "test.acme.not_null_mrr_is_active.66e2203f7d"
+2022-12-06 20:22:39.776768 (Thread-3): 20:22:39  Began compiling node test.acme.not_null_mrr_is_active.66e2203f7d
+2022-12-06 20:22:39.776891 (Thread-3): 20:22:39  Compiling test.acme.not_null_mrr_is_active.66e2203f7d
+2022-12-06 20:22:39.781694 (Thread-3): 20:22:39  Writing injected SQL for node "test.acme.not_null_mrr_is_active.66e2203f7d"
+2022-12-06 20:22:39.789509 (Thread-3): 20:22:39  finished collecting timing info
+2022-12-06 20:22:39.789659 (Thread-3): 20:22:39  Began executing node test.acme.not_null_mrr_is_active.66e2203f7d
+2022-12-06 20:22:39.793184 (Thread-3): 20:22:39  Writing runtime sql for node "test.acme.not_null_mrr_is_active.66e2203f7d"
+2022-12-06 20:22:39.802443 (Thread-3): 20:22:39  Using snowflake connection "test.acme.not_null_mrr_is_active.66e2203f7d"
+2022-12-06 20:22:39.802558 (Thread-3): 20:22:39  On test.acme.not_null_mrr_is_active.66e2203f7d: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "test.acme.not_null_mrr_is_active.66e2203f7d"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select is_active
+from MRR_ANALYSIS.MRR_ANALYSIS.mrr
+where is_active is null
+
+
+
+      
+    ) dbt_internal_test
+2022-12-06 20:22:39.802643 (Thread-3): 20:22:39  Opening a new connection, currently in state closed
+2022-12-06 20:22:39.946098 (Thread-1): 20:22:39  SQL status: SUCCESS 1 in 1.57 seconds
+2022-12-06 20:22:39.948008 (Thread-1): 20:22:39  finished collecting timing info
+2022-12-06 20:22:39.948174 (Thread-1): 20:22:39  On test.acme.not_null_mrr_first_active_month.a9078832e9: Close
+2022-12-06 20:22:39.966130 (Thread-4): 20:22:39  SQL status: SUCCESS 1 in 1.65 seconds
+2022-12-06 20:22:39.967888 (Thread-4): 20:22:39  finished collecting timing info
+2022-12-06 20:22:39.968041 (Thread-4): 20:22:39  On test.acme.not_null_mrr_date_month.d7121d9ce6: Close
+2022-12-06 20:22:40.015410 (Thread-1): 20:22:40  10 of 21 PASS not_null_mrr_first_active_month .................................. [PASS in 1.69s]
+2022-12-06 20:22:40.015716 (Thread-1): 20:22:40  Finished running node test.acme.not_null_mrr_first_active_month.a9078832e9
+2022-12-06 20:22:40.015883 (Thread-1): 20:22:40  Began running node test.acme.not_null_mrr_is_first_month.97ecc2049e
+2022-12-06 20:22:40.016008 (Thread-1): 20:22:40  13 of 21 START test not_null_mrr_is_first_month ................................ [RUN]
+2022-12-06 20:22:40.016378 (Thread-1): 20:22:40  Acquiring new snowflake connection "test.acme.not_null_mrr_is_first_month.97ecc2049e"
+2022-12-06 20:22:40.016474 (Thread-1): 20:22:40  Began compiling node test.acme.not_null_mrr_is_first_month.97ecc2049e
+2022-12-06 20:22:40.016562 (Thread-1): 20:22:40  Compiling test.acme.not_null_mrr_is_first_month.97ecc2049e
+2022-12-06 20:22:40.021512 (Thread-1): 20:22:40  Writing injected SQL for node "test.acme.not_null_mrr_is_first_month.97ecc2049e"
+2022-12-06 20:22:40.026084 (Thread-4): 20:22:40  9 of 21 PASS not_null_mrr_date_month ........................................... [PASS in 1.73s]
+2022-12-06 20:22:40.026324 (Thread-4): 20:22:40  Finished running node test.acme.not_null_mrr_date_month.d7121d9ce6
+2022-12-06 20:22:40.026469 (Thread-4): 20:22:40  Began running node test.acme.not_null_mrr_is_last_month.a91990c0de
+2022-12-06 20:22:40.026586 (Thread-4): 20:22:40  14 of 21 START test not_null_mrr_is_last_month ................................. [RUN]
+2022-12-06 20:22:40.026926 (Thread-4): 20:22:40  Acquiring new snowflake connection "test.acme.not_null_mrr_is_last_month.a91990c0de"
+2022-12-06 20:22:40.027018 (Thread-4): 20:22:40  Began compiling node test.acme.not_null_mrr_is_last_month.a91990c0de
+2022-12-06 20:22:40.034168 (Thread-103): handling ps request
+2022-12-06 20:22:40.027099 (Thread-4): 20:22:40  Compiling test.acme.not_null_mrr_is_last_month.a91990c0de
+2022-12-06 20:22:40.034712 (Thread-103): 20:22:40  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27993a3c10>]}
+2022-12-06 20:22:40.031381 (Thread-4): 20:22:40  Writing injected SQL for node "test.acme.not_null_mrr_is_last_month.a91990c0de"
+2022-12-06 20:22:40.035553 (Thread-103): sending response (<Response 3480 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:40.037021 (Thread-1): 20:22:40  finished collecting timing info
+2022-12-06 20:22:40.037219 (Thread-1): 20:22:40  Began executing node test.acme.not_null_mrr_is_first_month.97ecc2049e
+2022-12-06 20:22:40.039799 (Thread-1): 20:22:40  Writing runtime sql for node "test.acme.not_null_mrr_is_first_month.97ecc2049e"
+2022-12-06 20:22:40.040639 (Thread-4): 20:22:40  finished collecting timing info
+2022-12-06 20:22:40.040796 (Thread-4): 20:22:40  Began executing node test.acme.not_null_mrr_is_last_month.a91990c0de
+2022-12-06 20:22:40.043250 (Thread-4): 20:22:40  Writing runtime sql for node "test.acme.not_null_mrr_is_last_month.a91990c0de"
+2022-12-06 20:22:40.051405 (Thread-1): 20:22:40  Using snowflake connection "test.acme.not_null_mrr_is_first_month.97ecc2049e"
+2022-12-06 20:22:40.051517 (Thread-1): 20:22:40  On test.acme.not_null_mrr_is_first_month.97ecc2049e: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "test.acme.not_null_mrr_is_first_month.97ecc2049e"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select is_first_month
+from MRR_ANALYSIS.MRR_ANALYSIS.mrr
+where is_first_month is null
+
+
+
+      
+    ) dbt_internal_test
+2022-12-06 20:22:40.051602 (Thread-1): 20:22:40  Opening a new connection, currently in state closed
+2022-12-06 20:22:40.057231 (Thread-4): 20:22:40  Using snowflake connection "test.acme.not_null_mrr_is_last_month.a91990c0de"
+2022-12-06 20:22:40.057358 (Thread-4): 20:22:40  On test.acme.not_null_mrr_is_last_month.a91990c0de: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "test.acme.not_null_mrr_is_last_month.a91990c0de"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select is_last_month
+from MRR_ANALYSIS.MRR_ANALYSIS.mrr
+where is_last_month is null
+
+
+
+      
+    ) dbt_internal_test
+2022-12-06 20:22:40.057441 (Thread-4): 20:22:40  Opening a new connection, currently in state closed
+2022-12-06 20:22:40.412491 (Thread-104): handling status request
+2022-12-06 20:22:40.412917 (Thread-104): 20:22:40  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27993b1730>]}
+2022-12-06 20:22:40.413488 (Thread-104): sending response (<Response 3873 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:40.679289 (Thread-2): 20:22:40  SQL status: SUCCESS 1 in 1.31 seconds
+2022-12-06 20:22:40.681339 (Thread-2): 20:22:40  finished collecting timing info
+2022-12-06 20:22:40.681509 (Thread-2): 20:22:40  On test.acme.not_null_mrr_id.45914052fb: Close
+2022-12-06 20:22:40.750799 (Thread-2): 20:22:40  11 of 21 PASS not_null_mrr_id .................................................. [PASS in 1.41s]
+2022-12-06 20:22:40.751131 (Thread-2): 20:22:40  Finished running node test.acme.not_null_mrr_id.45914052fb
+2022-12-06 20:22:40.751309 (Thread-2): 20:22:40  Began running node test.acme.not_null_mrr_last_active_month.c5f2565121
+2022-12-06 20:22:40.751436 (Thread-2): 20:22:40  15 of 21 START test not_null_mrr_last_active_month ............................. [RUN]
+2022-12-06 20:22:40.751818 (Thread-2): 20:22:40  Acquiring new snowflake connection "test.acme.not_null_mrr_last_active_month.c5f2565121"
+2022-12-06 20:22:40.751914 (Thread-2): 20:22:40  Began compiling node test.acme.not_null_mrr_last_active_month.c5f2565121
+2022-12-06 20:22:40.752002 (Thread-2): 20:22:40  Compiling test.acme.not_null_mrr_last_active_month.c5f2565121
+2022-12-06 20:22:40.756683 (Thread-2): 20:22:40  Writing injected SQL for node "test.acme.not_null_mrr_last_active_month.c5f2565121"
+2022-12-06 20:22:40.764922 (Thread-2): 20:22:40  finished collecting timing info
+2022-12-06 20:22:40.765095 (Thread-2): 20:22:40  Began executing node test.acme.not_null_mrr_last_active_month.c5f2565121
+2022-12-06 20:22:40.767839 (Thread-2): 20:22:40  Writing runtime sql for node "test.acme.not_null_mrr_last_active_month.c5f2565121"
+2022-12-06 20:22:40.776540 (Thread-2): 20:22:40  Using snowflake connection "test.acme.not_null_mrr_last_active_month.c5f2565121"
+2022-12-06 20:22:40.776663 (Thread-2): 20:22:40  On test.acme.not_null_mrr_last_active_month.c5f2565121: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "test.acme.not_null_mrr_last_active_month.c5f2565121"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select last_active_month
+from MRR_ANALYSIS.MRR_ANALYSIS.mrr
+where last_active_month is null
+
+
+
+      
+    ) dbt_internal_test
+2022-12-06 20:22:40.776749 (Thread-2): 20:22:40  Opening a new connection, currently in state closed
+2022-12-06 20:22:40.931433 (Thread-105): handling poll request
+2022-12-06 20:22:40.931840 (Thread-105): 20:22:40  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27993b1ee0>]}
+2022-12-06 20:22:40.932982 (Thread-105): sending response (<Response 31022 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:41.087646 (Thread-3): 20:22:41  SQL status: SUCCESS 1 in 1.28 seconds
+2022-12-06 20:22:41.089768 (Thread-3): 20:22:41  finished collecting timing info
+2022-12-06 20:22:41.089942 (Thread-3): 20:22:41  On test.acme.not_null_mrr_is_active.66e2203f7d: Close
+2022-12-06 20:22:41.149476 (Thread-3): 20:22:41  12 of 21 PASS not_null_mrr_is_active ........................................... [PASS in 1.37s]
+2022-12-06 20:22:41.149794 (Thread-3): 20:22:41  Finished running node test.acme.not_null_mrr_is_active.66e2203f7d
+2022-12-06 20:22:41.149968 (Thread-3): 20:22:41  Began running node test.acme.not_null_mrr_mrr.7e419847d2
+2022-12-06 20:22:41.150096 (Thread-3): 20:22:41  16 of 21 START test not_null_mrr_mrr ........................................... [RUN]
+2022-12-06 20:22:41.150481 (Thread-3): 20:22:41  Acquiring new snowflake connection "test.acme.not_null_mrr_mrr.7e419847d2"
+2022-12-06 20:22:41.150580 (Thread-3): 20:22:41  Began compiling node test.acme.not_null_mrr_mrr.7e419847d2
+2022-12-06 20:22:41.150669 (Thread-3): 20:22:41  Compiling test.acme.not_null_mrr_mrr.7e419847d2
+2022-12-06 20:22:41.155626 (Thread-3): 20:22:41  Writing injected SQL for node "test.acme.not_null_mrr_mrr.7e419847d2"
+2022-12-06 20:22:41.165064 (Thread-3): 20:22:41  finished collecting timing info
+2022-12-06 20:22:41.165292 (Thread-3): 20:22:41  Began executing node test.acme.not_null_mrr_mrr.7e419847d2
+2022-12-06 20:22:41.168142 (Thread-3): 20:22:41  Writing runtime sql for node "test.acme.not_null_mrr_mrr.7e419847d2"
+2022-12-06 20:22:41.176767 (Thread-3): 20:22:41  Using snowflake connection "test.acme.not_null_mrr_mrr.7e419847d2"
+2022-12-06 20:22:41.176934 (Thread-3): 20:22:41  On test.acme.not_null_mrr_mrr.7e419847d2: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "test.acme.not_null_mrr_mrr.7e419847d2"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select mrr
+from MRR_ANALYSIS.MRR_ANALYSIS.mrr
+where mrr is null
+
+
+
+      
+    ) dbt_internal_test
+2022-12-06 20:22:41.177023 (Thread-3): 20:22:41  Opening a new connection, currently in state closed
+2022-12-06 20:22:41.420237 (Thread-1): 20:22:41  SQL status: SUCCESS 1 in 1.37 seconds
+2022-12-06 20:22:41.422340 (Thread-1): 20:22:41  finished collecting timing info
+2022-12-06 20:22:41.422509 (Thread-1): 20:22:41  On test.acme.not_null_mrr_is_first_month.97ecc2049e: Close
+2022-12-06 20:22:41.478161 (Thread-1): 20:22:41  13 of 21 PASS not_null_mrr_is_first_month ...................................... [PASS in 1.46s]
+2022-12-06 20:22:41.478498 (Thread-1): 20:22:41  Finished running node test.acme.not_null_mrr_is_first_month.97ecc2049e
+2022-12-06 20:22:41.478661 (Thread-1): 20:22:41  Began running node test.acme.not_null_mrr_mrr_change.0329647bd8
+2022-12-06 20:22:41.478796 (Thread-1): 20:22:41  17 of 21 START test not_null_mrr_mrr_change .................................... [RUN]
+2022-12-06 20:22:41.479189 (Thread-1): 20:22:41  Acquiring new snowflake connection "test.acme.not_null_mrr_mrr_change.0329647bd8"
+2022-12-06 20:22:41.479296 (Thread-1): 20:22:41  Began compiling node test.acme.not_null_mrr_mrr_change.0329647bd8
+2022-12-06 20:22:41.479397 (Thread-1): 20:22:41  Compiling test.acme.not_null_mrr_mrr_change.0329647bd8
+2022-12-06 20:22:41.484442 (Thread-1): 20:22:41  Writing injected SQL for node "test.acme.not_null_mrr_mrr_change.0329647bd8"
+2022-12-06 20:22:41.492977 (Thread-1): 20:22:41  finished collecting timing info
+2022-12-06 20:22:41.493172 (Thread-1): 20:22:41  Began executing node test.acme.not_null_mrr_mrr_change.0329647bd8
+2022-12-06 20:22:41.497124 (Thread-1): 20:22:41  Writing runtime sql for node "test.acme.not_null_mrr_mrr_change.0329647bd8"
+2022-12-06 20:22:41.505540 (Thread-1): 20:22:41  Using snowflake connection "test.acme.not_null_mrr_mrr_change.0329647bd8"
+2022-12-06 20:22:41.505671 (Thread-1): 20:22:41  On test.acme.not_null_mrr_mrr_change.0329647bd8: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "test.acme.not_null_mrr_mrr_change.0329647bd8"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select mrr_change
+from MRR_ANALYSIS.MRR_ANALYSIS.mrr
+where mrr_change is null
+
+
+
+      
+    ) dbt_internal_test
+2022-12-06 20:22:41.505758 (Thread-1): 20:22:41  Opening a new connection, currently in state closed
+2022-12-06 20:22:41.581228 (Thread-4): 20:22:41  SQL status: SUCCESS 1 in 1.52 seconds
+2022-12-06 20:22:41.583170 (Thread-4): 20:22:41  finished collecting timing info
+2022-12-06 20:22:41.583339 (Thread-4): 20:22:41  On test.acme.not_null_mrr_is_last_month.a91990c0de: Close
+2022-12-06 20:22:41.693671 (Thread-4): 20:22:41  14 of 21 PASS not_null_mrr_is_last_month ....................................... [PASS in 1.67s]
+2022-12-06 20:22:41.693989 (Thread-4): 20:22:41  Finished running node test.acme.not_null_mrr_is_last_month.a91990c0de
+2022-12-06 20:22:41.694148 (Thread-4): 20:22:41  Began running node test.acme.not_null_mrr_previous_month_is_active.836f1724d2
+2022-12-06 20:22:41.694272 (Thread-4): 20:22:41  18 of 21 START test not_null_mrr_previous_month_is_active ...................... [RUN]
+2022-12-06 20:22:41.694650 (Thread-4): 20:22:41  Acquiring new snowflake connection "test.acme.not_null_mrr_previous_month_is_active.836f1724d2"
+2022-12-06 20:22:41.694746 (Thread-4): 20:22:41  Began compiling node test.acme.not_null_mrr_previous_month_is_active.836f1724d2
+2022-12-06 20:22:41.694835 (Thread-4): 20:22:41  Compiling test.acme.not_null_mrr_previous_month_is_active.836f1724d2
+2022-12-06 20:22:41.699687 (Thread-4): 20:22:41  Writing injected SQL for node "test.acme.not_null_mrr_previous_month_is_active.836f1724d2"
+2022-12-06 20:22:41.708768 (Thread-4): 20:22:41  finished collecting timing info
+2022-12-06 20:22:41.708964 (Thread-4): 20:22:41  Began executing node test.acme.not_null_mrr_previous_month_is_active.836f1724d2
+2022-12-06 20:22:41.711707 (Thread-4): 20:22:41  Writing runtime sql for node "test.acme.not_null_mrr_previous_month_is_active.836f1724d2"
+2022-12-06 20:22:41.720897 (Thread-4): 20:22:41  Using snowflake connection "test.acme.not_null_mrr_previous_month_is_active.836f1724d2"
+2022-12-06 20:22:41.721044 (Thread-4): 20:22:41  On test.acme.not_null_mrr_previous_month_is_active.836f1724d2: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "test.acme.not_null_mrr_previous_month_is_active.836f1724d2"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select previous_month_is_active
+from MRR_ANALYSIS.MRR_ANALYSIS.mrr
+where previous_month_is_active is null
+
+
+
+      
+    ) dbt_internal_test
+2022-12-06 20:22:41.721131 (Thread-4): 20:22:41  Opening a new connection, currently in state closed
+2022-12-06 20:22:42.074434 (Thread-2): 20:22:42  SQL status: SUCCESS 1 in 1.3 seconds
+2022-12-06 20:22:42.076387 (Thread-2): 20:22:42  finished collecting timing info
+2022-12-06 20:22:42.076542 (Thread-2): 20:22:42  On test.acme.not_null_mrr_last_active_month.c5f2565121: Close
+2022-12-06 20:22:42.135099 (Thread-2): 20:22:42  15 of 21 PASS not_null_mrr_last_active_month ................................... [PASS in 1.38s]
+2022-12-06 20:22:42.135407 (Thread-2): 20:22:42  Finished running node test.acme.not_null_mrr_last_active_month.c5f2565121
+2022-12-06 20:22:42.135570 (Thread-2): 20:22:42  Began running node test.acme.not_null_mrr_previous_month_mrr.9a7dfac4d7
+2022-12-06 20:22:42.135692 (Thread-2): 20:22:42  19 of 21 START test not_null_mrr_previous_month_mrr ............................ [RUN]
+2022-12-06 20:22:42.136071 (Thread-2): 20:22:42  Acquiring new snowflake connection "test.acme.not_null_mrr_previous_month_mrr.9a7dfac4d7"
+2022-12-06 20:22:42.136168 (Thread-2): 20:22:42  Began compiling node test.acme.not_null_mrr_previous_month_mrr.9a7dfac4d7
+2022-12-06 20:22:42.136255 (Thread-2): 20:22:42  Compiling test.acme.not_null_mrr_previous_month_mrr.9a7dfac4d7
+2022-12-06 20:22:42.141096 (Thread-2): 20:22:42  Writing injected SQL for node "test.acme.not_null_mrr_previous_month_mrr.9a7dfac4d7"
+2022-12-06 20:22:42.150620 (Thread-2): 20:22:42  finished collecting timing info
+2022-12-06 20:22:42.150782 (Thread-2): 20:22:42  Began executing node test.acme.not_null_mrr_previous_month_mrr.9a7dfac4d7
+2022-12-06 20:22:42.153405 (Thread-2): 20:22:42  Writing runtime sql for node "test.acme.not_null_mrr_previous_month_mrr.9a7dfac4d7"
+2022-12-06 20:22:42.163908 (Thread-2): 20:22:42  Using snowflake connection "test.acme.not_null_mrr_previous_month_mrr.9a7dfac4d7"
+2022-12-06 20:22:42.164078 (Thread-2): 20:22:42  On test.acme.not_null_mrr_previous_month_mrr.9a7dfac4d7: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "test.acme.not_null_mrr_previous_month_mrr.9a7dfac4d7"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select previous_month_mrr
+from MRR_ANALYSIS.MRR_ANALYSIS.mrr
+where previous_month_mrr is null
+
+
+
+      
+    ) dbt_internal_test
+2022-12-06 20:22:42.164190 (Thread-2): 20:22:42  Opening a new connection, currently in state closed
+2022-12-06 20:22:42.358934 (Thread-106): handling poll request
+2022-12-06 20:22:42.359354 (Thread-106): 20:22:42  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279ba9f820>]}
+2022-12-06 20:22:42.360498 (Thread-106): sending response (<Response 30856 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:42.452553 (Thread-107): handling ps request
+2022-12-06 20:22:42.449605 (Thread-3): 20:22:42  SQL status: SUCCESS 1 in 1.27 seconds
+2022-12-06 20:22:42.453309 (Thread-107): 20:22:42  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27993d0610>]}
+2022-12-06 20:22:42.451582 (Thread-3): 20:22:42  finished collecting timing info
+2022-12-06 20:22:42.454202 (Thread-107): sending response (<Response 3480 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:42.451751 (Thread-3): 20:22:42  On test.acme.not_null_mrr_mrr.7e419847d2: Close
+2022-12-06 20:22:42.508242 (Thread-3): 20:22:42  16 of 21 PASS not_null_mrr_mrr ................................................. [PASS in 1.36s]
+2022-12-06 20:22:42.508560 (Thread-3): 20:22:42  Finished running node test.acme.not_null_mrr_mrr.7e419847d2
+2022-12-06 20:22:42.508720 (Thread-3): 20:22:42  Began running node test.acme.unique_customer_churn_month_customer_id.a402b7af3f
+2022-12-06 20:22:42.508861 (Thread-3): 20:22:42  20 of 21 START test unique_customer_churn_month_customer_id .................... [RUN]
+2022-12-06 20:22:42.509274 (Thread-3): 20:22:42  Acquiring new snowflake connection "test.acme.unique_customer_churn_month_customer_id.a402b7af3f"
+2022-12-06 20:22:42.509376 (Thread-3): 20:22:42  Began compiling node test.acme.unique_customer_churn_month_customer_id.a402b7af3f
+2022-12-06 20:22:42.509463 (Thread-3): 20:22:42  Compiling test.acme.unique_customer_churn_month_customer_id.a402b7af3f
+2022-12-06 20:22:42.516982 (Thread-3): 20:22:42  Writing injected SQL for node "test.acme.unique_customer_churn_month_customer_id.a402b7af3f"
+2022-12-06 20:22:42.526061 (Thread-3): 20:22:42  finished collecting timing info
+2022-12-06 20:22:42.526224 (Thread-3): 20:22:42  Began executing node test.acme.unique_customer_churn_month_customer_id.a402b7af3f
+2022-12-06 20:22:42.528762 (Thread-3): 20:22:42  Writing runtime sql for node "test.acme.unique_customer_churn_month_customer_id.a402b7af3f"
+2022-12-06 20:22:42.538932 (Thread-3): 20:22:42  Using snowflake connection "test.acme.unique_customer_churn_month_customer_id.a402b7af3f"
+2022-12-06 20:22:42.539045 (Thread-3): 20:22:42  On test.acme.unique_customer_churn_month_customer_id.a402b7af3f: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "test.acme.unique_customer_churn_month_customer_id.a402b7af3f"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from MRR_ANALYSIS.MRR_ANALYSIS.customer_churn_month
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+2022-12-06 20:22:42.539127 (Thread-3): 20:22:42  Opening a new connection, currently in state closed
+2022-12-06 20:22:42.761617 (Thread-1): 20:22:42  SQL status: SUCCESS 1 in 1.26 seconds
+2022-12-06 20:22:42.763686 (Thread-1): 20:22:42  finished collecting timing info
+2022-12-06 20:22:42.763853 (Thread-1): 20:22:42  On test.acme.not_null_mrr_mrr_change.0329647bd8: Close
+2022-12-06 20:22:42.816093 (Thread-1): 20:22:42  17 of 21 PASS not_null_mrr_mrr_change .......................................... [PASS in 1.34s]
+2022-12-06 20:22:42.816410 (Thread-1): 20:22:42  Finished running node test.acme.not_null_mrr_mrr_change.0329647bd8
+2022-12-06 20:22:42.816572 (Thread-1): 20:22:42  Began running node test.acme.unique_mrr_id.a14d6c26bd
+2022-12-06 20:22:42.816699 (Thread-1): 20:22:42  21 of 21 START test unique_mrr_id .............................................. [RUN]
+2022-12-06 20:22:42.817085 (Thread-1): 20:22:42  Acquiring new snowflake connection "test.acme.unique_mrr_id.a14d6c26bd"
+2022-12-06 20:22:42.817212 (Thread-1): 20:22:42  Began compiling node test.acme.unique_mrr_id.a14d6c26bd
+2022-12-06 20:22:42.817301 (Thread-1): 20:22:42  Compiling test.acme.unique_mrr_id.a14d6c26bd
+2022-12-06 20:22:42.822144 (Thread-1): 20:22:42  Writing injected SQL for node "test.acme.unique_mrr_id.a14d6c26bd"
+2022-12-06 20:22:42.831645 (Thread-1): 20:22:42  finished collecting timing info
+2022-12-06 20:22:42.831814 (Thread-1): 20:22:42  Began executing node test.acme.unique_mrr_id.a14d6c26bd
+2022-12-06 20:22:42.834510 (Thread-1): 20:22:42  Writing runtime sql for node "test.acme.unique_mrr_id.a14d6c26bd"
+2022-12-06 20:22:42.844588 (Thread-1): 20:22:42  Using snowflake connection "test.acme.unique_mrr_id.a14d6c26bd"
+2022-12-06 20:22:42.844707 (Thread-1): 20:22:42  On test.acme.unique_mrr_id.a14d6c26bd: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "user", "target_name": "default", "node_id": "test.acme.unique_mrr_id.a14d6c26bd"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from MRR_ANALYSIS.MRR_ANALYSIS.mrr
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+2022-12-06 20:22:42.844790 (Thread-1): 20:22:42  Opening a new connection, currently in state closed
+2022-12-06 20:22:42.848994 (Thread-108): handling status request
+2022-12-06 20:22:42.849369 (Thread-108): 20:22:42  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27993d8430>]}
+2022-12-06 20:22:42.849867 (Thread-108): sending response (<Response 3873 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:43.002162 (Thread-4): 20:22:43  SQL status: SUCCESS 1 in 1.28 seconds
+2022-12-06 20:22:43.004088 (Thread-4): 20:22:43  finished collecting timing info
+2022-12-06 20:22:43.004257 (Thread-4): 20:22:43  On test.acme.not_null_mrr_previous_month_is_active.836f1724d2: Close
+2022-12-06 20:22:43.070163 (Thread-4): 20:22:43  18 of 21 PASS not_null_mrr_previous_month_is_active ............................ [PASS in 1.38s]
+2022-12-06 20:22:43.070486 (Thread-4): 20:22:43  Finished running node test.acme.not_null_mrr_previous_month_is_active.836f1724d2
+2022-12-06 20:22:43.095915 (Thread-3): 20:22:43  SQL status: SUCCESS 1 in 0.56 seconds
+2022-12-06 20:22:43.097871 (Thread-3): 20:22:43  finished collecting timing info
+2022-12-06 20:22:43.098027 (Thread-3): 20:22:43  On test.acme.unique_customer_churn_month_customer_id.a402b7af3f: Close
+2022-12-06 20:22:43.160223 (Thread-3): 20:22:43  20 of 21 PASS unique_customer_churn_month_customer_id .......................... [PASS in 0.65s]
+2022-12-06 20:22:43.160536 (Thread-3): 20:22:43  Finished running node test.acme.unique_customer_churn_month_customer_id.a402b7af3f
+2022-12-06 20:22:43.387021 (Thread-2): 20:22:43  SQL status: SUCCESS 1 in 1.22 seconds
+2022-12-06 20:22:43.389001 (Thread-2): 20:22:43  finished collecting timing info
+2022-12-06 20:22:43.389195 (Thread-2): 20:22:43  On test.acme.not_null_mrr_previous_month_mrr.9a7dfac4d7: Close
+2022-12-06 20:22:43.443548 (Thread-2): 20:22:43  19 of 21 PASS not_null_mrr_previous_month_mrr .................................. [PASS in 1.31s]
+2022-12-06 20:22:43.443857 (Thread-2): 20:22:43  Finished running node test.acme.not_null_mrr_previous_month_mrr.9a7dfac4d7
+2022-12-06 20:22:43.756400 (Thread-109): handling poll request
+2022-12-06 20:22:43.756867 (Thread-109): 20:22:43  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27993d8b20>]}
+2022-12-06 20:22:43.757892 (Thread-109): sending response (<Response 22125 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:44.064144 (Thread-1): 20:22:44  SQL status: SUCCESS 1 in 1.22 seconds
+2022-12-06 20:22:44.066088 (Thread-1): 20:22:44  finished collecting timing info
+2022-12-06 20:22:44.066251 (Thread-1): 20:22:44  On test.acme.unique_mrr_id.a14d6c26bd: Close
+2022-12-06 20:22:44.123841 (Thread-1): 20:22:44  21 of 21 PASS unique_mrr_id .................................................... [PASS in 1.31s]
+2022-12-06 20:22:44.124153 (Thread-1): 20:22:44  Finished running node test.acme.unique_mrr_id.a14d6c26bd
+2022-12-06 20:22:44.126073 (MainThread): 20:22:44  Acquiring new snowflake connection "master"
+2022-12-06 20:22:44.126594 (MainThread): 20:22:44  
+2022-12-06 20:22:44.126696 (MainThread): 20:22:44  Finished running 21 tests in 0 hours 0 minutes and 9.13 seconds (9.13s).
+2022-12-06 20:22:44.126779 (MainThread): 20:22:44  Connection 'master' was properly closed.
+2022-12-06 20:22:44.126845 (MainThread): 20:22:44  Connection 'test.acme.unique_mrr_id.a14d6c26bd' was properly closed.
+2022-12-06 20:22:44.126905 (MainThread): 20:22:44  Connection 'test.acme.not_null_mrr_previous_month_mrr.9a7dfac4d7' was properly closed.
+2022-12-06 20:22:44.126964 (MainThread): 20:22:44  Connection 'test.acme.unique_customer_churn_month_customer_id.a402b7af3f' was properly closed.
+2022-12-06 20:22:44.127021 (MainThread): 20:22:44  Connection 'test.acme.not_null_mrr_previous_month_is_active.836f1724d2' was properly closed.
+2022-12-06 20:22:44.206946 (MainThread): 20:22:44  
+2022-12-06 20:22:44.207163 (MainThread): 20:22:44  Completed successfully
+2022-12-06 20:22:44.207302 (MainThread): 20:22:44  
+2022-12-06 20:22:44.207391 (MainThread): 20:22:44  Done. PASS=21 WARN=0 ERROR=0 SKIP=0 TOTAL=21
+2022-12-06 20:22:44.865053 (Thread-110): handling ps request
+2022-12-06 20:22:44.865528 (Thread-110): 20:22:44  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2799374310>]}
+2022-12-06 20:22:44.866279 (Thread-110): sending response (<Response 3506 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:45.182189 (Thread-111): handling poll request
+2022-12-06 20:22:45.182601 (Thread-111): 20:22:45  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279940fe50>]}
+2022-12-06 20:22:45.185091 (Thread-111): sending response (<Response 63860 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:45.270483 (Thread-112): handling status request
+2022-12-06 20:22:45.270894 (Thread-112): 20:22:45  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279936d610>]}
+2022-12-06 20:22:45.271424 (Thread-112): sending response (<Response 3873 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:45.570688 (Thread-113): handling status request
+2022-12-06 20:22:45.571099 (Thread-113): 20:22:45  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2799365b20>]}
+2022-12-06 20:22:45.571654 (Thread-113): sending response (<Response 3856 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:22:45.577014 (Thread-114): handling list request
+2022-12-06 20:22:45.577381 (Thread-114): 20:22:45  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279937d760>]}
+2022-12-06 20:22:45.607256 (Thread-114): 20:22:45  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2799389d30>]}
+2022-12-06 20:22:45.630966 (Thread-114): 20:22:45  Found 4 models, 21 tests, 0 snapshots, 0 analyses, 491 macros, 0 operations, 1 seed file, 0 sources, 0 exposures, 0 metrics
+2022-12-06 20:22:45.631214 (Thread-114): 20:22:45  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279bac9e20>]}
+2022-12-06 20:22:45.631958 (Thread-114): 20:22:45  The selection criterion '+dbt_project.yml+' does not match any nodes
+2022-12-06 20:22:45.632097 (Thread-114): 20:22:45  No nodes selected!
+2022-12-06 20:22:45.633868 (Thread-114): sending response (<Response 2537 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:23:34.384355 (Thread-115): handling status request
+2022-12-06 20:23:34.385631 (Thread-115): 20:23:34  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279937d700>]}
+2022-12-06 20:23:34.386228 (Thread-115): sending response (<Response 3873 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:26:31.339060 (Thread-116): handling status request
+2022-12-06 20:26:31.340343 (Thread-116): 20:26:31  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27993906a0>]}
+2022-12-06 20:26:31.340914 (Thread-116): sending response (<Response 3873 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:26:41.749837 (Thread-117): handling status request
+2022-12-06 20:26:41.750251 (Thread-117): 20:26:41  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27993909a0>]}
+2022-12-06 20:26:41.750784 (Thread-117): sending response (<Response 3873 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:26:45.076937 (Thread-118): handling status request
+2022-12-06 20:26:45.077380 (Thread-118): 20:26:45  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f27993908b0>]}
+2022-12-06 20:26:45.077919 (Thread-118): sending response (<Response 3873 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:29:45.623974 (Thread-119): handling status request
+2022-12-06 20:29:45.625079 (Thread-119): 20:29:45  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2799390b20>]}
+2022-12-06 20:29:45.625657 (Thread-119): sending response (<Response 3873 bytes [200 OK]>) to 10.0.130.172
+2022-12-06 20:33:10.049652 (Thread-120): handling status request
+2022-12-06 20:33:10.050851 (Thread-120): 20:33:10  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '3904d103-6add-454f-b0c0-d6aa8b63b802', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f279936d5b0>]}
+2022-12-06 20:33:10.051392 (Thread-120): sending response (<Response 3873 bytes [200 OK]>) to 10.0.130.172
