@@ -1,4 +1,4 @@
-SQL style guide
+SQL style guide .
 DO NOT OPTIMIZE FOR FEWER LINES OF CODE.
 
 New lines are cheap, brain time is expensive; new lines should be used within reason to produce code that is easily read.
